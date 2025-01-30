@@ -1545,7 +1545,7 @@ class TcpOslServer(OslServer):
             Raised when the timeout float value expires.
         """
         # TODO: test
-        current_func_name = self.connect_nodes.__name__
+        current_func_name = self.create_input_slot.__name__
         self.send_command(
             command=commands.create_input_slot(
                 actor_uid=actor_uid,
@@ -1582,7 +1582,7 @@ class TcpOslServer(OslServer):
             Raised when the timeout float value expires.
         """
         # TODO: test
-        current_func_name = self.connect_nodes.__name__
+        current_func_name = self.create_output_slot.__name__
         self.send_command(
             command=commands.create_output_slot(
                 actor_uid=actor_uid,
@@ -4051,7 +4051,7 @@ class TcpOslServer(OslServer):
 
         if self.__get_project_status() == "PROCESSING":
             already_running = True
-            self._logger.debug("Status PROCESSING")
+            self._logger.warning("Project is already PROCESSING, `start` command was not sent.")
 
         if not already_running and (wait_for_started or wait_for_finished):
             exec_started_listener = self.__create_exec_started_listener(
