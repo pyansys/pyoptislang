@@ -41,6 +41,8 @@ and can be used to generate commands to the optiSLang server:
    remove_criteria
    remove_criterion
    remove_node
+   rename_node
+   rename_slot
    re_register_locations_as_parameter
    re_register_locations_as_response
    reset

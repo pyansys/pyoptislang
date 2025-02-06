@@ -161,7 +161,8 @@ def test_connect_nodes():
     requiered_string = json.loads(
         '{ "projects": [ { "commands": [ { "type": "builtin", "command": "CONNECT_NODES", "args": '
         '{ "from_actor_uid": "3751b23c-3efb-459e-9b73-49cb4ae77e67", "from_slot": "OMDBPath", '
-        '"to_actor_uid": "e849f1e9-75b0-4472-8447-d076b33c47bf", "to_slot": "IMDBPath" } } ] } ] }'
+        '"to_actor_uid": "e849f1e9-75b0-4472-8447-d076b33c47bf", "to_slot": "IMDBPath", '
+        '"skip_rename_slot": false } } ] } ] }'
     )
     assert type(json_string) == str
     assert sorted(dictionary.items()) == sorted(requiered_string.items())

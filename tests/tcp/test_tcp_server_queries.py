@@ -429,7 +429,7 @@ def test_input_slot_value():
     dictionary = json.loads(json_string)
     requiered_string = json.loads(
         '{ "What": "INPUT_SLOT_VALUE", "uid": "5cdfb20b-bef6-4412-9985-89f5ded5ee95",'
-        ' "hid": "0.1", "slot_name": "IDesign" }'
+        ' "args": {"legacy_design_format": false}, "hid": "0.1", "slot_name": "IDesign" }'
     )
     assert type(json_string) == str
     assert sorted(dictionary.items()) == sorted(requiered_string.items())
@@ -461,7 +461,7 @@ def test_output_slot_value():
     dictionary = json.loads(json_string)
     requiered_string = json.loads(
         '{ "What": "OUTPUT_SLOT_VALUE", "uid": "5cdfb20b-bef6-4412-9985-89f5ded5ee95",'
-        ' "hid": "0.1", "slot_name": "ODesign" }'
+        ' "args": {"legacy_design_format": false}, "hid": "0.1", "slot_name": "ODesign" }'
     )
     assert type(json_string) == str
     assert sorted(dictionary.items()) == sorted(requiered_string.items())

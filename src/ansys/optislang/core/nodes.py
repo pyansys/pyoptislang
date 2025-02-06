@@ -675,6 +675,128 @@ class Node(ABC):
         """
         pass
 
+    @abstractmethod
+    def create_input_slot(
+        self, slot_name: str, type_hint: Optional[str] = None  # pragma: no cover
+    ) -> None:
+        """Create dynamic input slot.
+
+        Parameters
+        ----------
+        slot_name : str
+            Name of the slot to be created.
+        type_hint: Optional[str], optional
+            Type of the slot. By default ``None``.
+            Available types:
+
+            * ``Undefined``, undefined type
+            * ``Bool``
+            * ``Integer``
+            * ``Unsigned Integer``
+            * ``Unsigned Integer Vector``
+            * ``Real``
+            * ``String``
+            * ``String List``
+            * ``Variant``
+            * ``Path``
+            * ``Parameter``
+            * ``Parameter Set``
+            * ``Parameter Manager``
+            * ``Design``
+            * ``Designpoint``
+            * ``Design Container``
+            * ``Bool Vector``
+            * ``Criterion``
+            * ``Criterion Sequence``
+            * ``Designentry``
+            * ``Runinfo Meta``
+            * ``Runinfo``
+            * ``Designpoints``
+
+        Raises
+        ------
+        OslCommunicationError
+            Raised when an error occurs while communicating with server.
+        OslCommandError
+            Raised when the command or query fails.
+        TimeoutError
+            Raised when the timeout float value expires.
+        """
+        pass
+
+    @abstractmethod
+    def create_output_slot(
+        self, slot_name: str, type_hint: Optional[str] = None
+    ) -> None:  # pragma: no cover
+        """Create dynamic output slot.
+
+        Parameters
+        ----------
+        slot_name : str
+            Name of the slot to be created.d
+        type_hint: Optional[str], optional
+            Type of the slot. By default ``None``.
+            Available types:
+
+            * ``Undefined``, undefined type
+            * ``Bool``
+            * ``Integer``
+            * ``Unsigned Integer``
+            * ``Unsigned Integer Vector``
+            * ``Real``
+            * ``String``
+            * ``String List``
+            * ``Variant``
+            * ``Path``
+            * ``Parameter``
+            * ``Parameter Set``
+            * ``Parameter Manager``
+            * ``Design``
+            * ``Designpoint``
+            * ``Design Container``
+            * ``Bool Vector``
+            * ``Criterion``
+            * ``Criterion Sequence``
+            * ``Designentry``
+            * ``Runinfo Meta``
+            * ``Runinfo``
+            * ``Designpoints``
+
+        Raises
+        ------
+        OslCommunicationError
+            Raised when an error occurs while communicating with server.
+        OslCommandError
+            Raised when the command or query fails.
+        TimeoutError
+            Raised when the timeout float value expires.
+        """
+        pass
+
+    @abstractmethod
+    def set_name(self, new_name: str) -> None:  # pragma: no cover
+        """Rename node.
+
+        .. note:: Method is supported for Ansys optiSLang version >= 25.2 only.
+
+        Parameters
+        ----------
+        new_name: str
+            New node name.
+
+        Raises
+        ------
+        NotImplementedError
+            Raised when unsupported optiSLang server is used.
+        OslCommunicationError
+            Raised when an error occurs while communicating with server.
+        OslCommandError
+            Raised when the command or query fails.
+        TimeoutError
+            Raised when the timeout float value expires.
+        """
+        pass
+
 
 class IntegrationNode(Node):
     """Base class for classes which provide for creating and operating on an integration node."""
@@ -1703,6 +1825,31 @@ class Slot(ABC):
         """
         pass
 
+    @name.setter
+    def name(self, name: str) -> None:  # pragma: no cover
+        """Set slot name.
+
+        .. note:: Setting slot names it only supported for dynamic slots.
+
+        .. note:: Method is supported for Ansys optiSLang version >= 25.2 only.
+
+        Parameters
+        ----------
+        name: str
+            Slot name.
+
+        Raises
+        ------
+        NotImplementedError
+            Raised when unsupported optiSLang server is used.
+        OslCommunicationError
+            Raised when an error occurs while communicating with the server.
+        OslCommandError
+            Raised when a command or query fails.
+        TimeoutError
+            Raised when the timeout float value expires.
+        """
+
     @property
     @abstractmethod
     def node(self) -> Node:  # pragma: no cover
@@ -1780,13 +1927,20 @@ class InputSlot(Slot):
         pass
 
     @abstractmethod
-    def connect_from(self, from_slot: Slot) -> Edge:  # pragma: no cover
+    def connect_from(
+        self, from_slot: Slot, skip_rename_slot: bool = False
+    ) -> Edge:  # pragma: no cover
         """Connect slot from another slot.
 
         Parameters
         ----------
         from_slot: Slot
             Sending (output) slot.
+        skip_rename_slot: bool, optional
+            Skip automatic slot rename for untyped slots.
+            Defaults to False.
+
+            .. note:: Argument has effect for Ansys optiSLang version >= 25.2 only.
 
         Returns
         -------
@@ -1829,13 +1983,18 @@ class OutputSlot(Slot):
         pass
 
     @abstractmethod
-    def connect_to(self, to_slot: Slot) -> Edge:  # pragma: no cover
+    def connect_to(self, to_slot: Slot, skip_rename_slot: bool = False) -> Edge:  # pragma: no cover
         """Connect slot to another slot.
 
         Parameters
         ----------
         to_slot: Slot
             Receiving (input) slot
+        skip_rename_slot: bool, optional
+            Skip automatic slot rename for untyped slots.
+            Defaults to False.
+
+            .. note:: Argument has effect for Ansys optiSLang version >= 25.2 only.
 
         Returns
         -------
@@ -1878,13 +2037,20 @@ class InnerInputSlot(Slot):
         pass
 
     @abstractmethod
-    def connect_from(self, from_slot: Slot) -> Edge:  # pragma: no cover
+    def connect_from(
+        self, from_slot: Slot, skip_rename_slot: bool = False
+    ) -> Edge:  # pragma: no cover
         """Connect slot from another slot.
 
         Parameters
         ----------
         from_slot: Slot
             Sending (output) slot.
+        skip_rename_slot: bool, optional
+            Skip automatic slot rename for untyped slots.
+            Defaults to False.
+
+            .. note:: Argument has effect for Ansys optiSLang version >= 25.2 only.
 
         Returns
         -------
@@ -1912,13 +2078,18 @@ class InnerOutputSlot(Slot):
         pass
 
     @abstractmethod
-    def connect_to(self, to_slot: Slot) -> Edge:  # pragma: no cover
+    def connect_to(self, to_slot: Slot, skip_rename_slot: bool = False) -> Edge:  # pragma: no cover
         """Connect slot to another slot.
 
         Parameters
         ----------
         to_slot: Slot
             Receiving (input) slot
+        skip_rename_slot: bool, optional
+            Skip automatic slot rename for untyped slots.
+            Defaults to False.
+
+            .. note:: Argument has effect for Ansys optiSLang version >= 25.2 only.
 
         Returns
         -------

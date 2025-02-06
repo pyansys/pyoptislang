@@ -57,6 +57,8 @@ _REGISTER_LOCATIONS_AS_RESPONSE = "REGISTER_LOCATIONS_AS_RESPONSE"
 _REMOVE_CRITERIA = "REMOVE_CRITERIA"
 _REMOVE_CRITERION = "REMOVE_CRITERION"
 _REMOVE_NODE = "REMOVE_NODE"
+_RENAME_NODE = "RENAME_NODE"
+_RENAME_SLOT = "RENAME_SLOT"
 _RE_REGISTER_LOCATIONS_AS_PARAMETER = "RE_REGISTER_LOCATIONS_AS_PARAMETER"
 _RE_REGISTER_LOCATIONS_AS_RESPONSE = "RE_REGISTER_LOCATIONS_AS_RESPONSE"
 _RESET = "RESET"
@@ -214,6 +216,7 @@ def connect_nodes(
     from_slot: str,
     to_actor_uid: str,
     to_slot: str,
+    skip_rename_slot: bool = False,
     password: Optional[str] = None,
 ) -> str:
     """Generate JSON string of connect_nodes command.
@@ -228,6 +231,12 @@ def connect_nodes(
         Uid of connection target.
     to_slot: str
         Slot of connection target.
+    skip_rename_slot: bool, optional
+        Skip automatic slot rename for untyped slots.
+        Defaults to False.
+
+        .. note:: Argument has effect for Ansys optiSLang version >= 25.2 only.
+
     password : Optional[str], optional
         Password, by default ``None``.
 
@@ -241,6 +250,7 @@ def connect_nodes(
     args["from_slot"] = from_slot
     args["to_actor_uid"] = to_actor_uid
     args["to_slot"] = to_slot
+    args["skip_rename_slot"] = skip_rename_slot
 
     return _to_json(_gen_server_command(command=_CONNECT_NODES, args=args, password=password))
 
@@ -258,6 +268,31 @@ def create_input_slot(
         Name of slot.
     type_hint: Optional[str], optional
         Type of hint. Defaults to ``None``.
+        Available types:
+
+        * ``Undefined``, undefined type
+        * ``Bool``
+        * ``Integer``
+        * ``Unsigned Integer``
+        * ``Unsigned Integer Vector``
+        * ``Real``
+        * ``String``
+        * ``String List``
+        * ``Variant``
+        * ``Path``
+        * ``Parameter``
+        * ``Parameter Set``
+        * ``Parameter Manager``
+        * ``Design``
+        * ``Designpoint``
+        * ``Design Container``
+        * ``Bool Vector``
+        * ``Criterion``
+        * ``Criterion Sequence``
+        * ``Designentry``
+        * ``Runinfo Meta``
+        * ``Runinfo``
+        * ``Designpoints``
     password : Optional[str], optional
         Password. Defaults to ``None``.
 
@@ -350,6 +385,31 @@ def create_output_slot(
         Name of the slot.
     type_hint: Optional[str], optional
         Type of the hint, by default ``None``.
+        Available types:
+
+        * ``Undefined``, undefined type
+        * ``Bool``
+        * ``Integer``
+        * ``Unsigned Integer``
+        * ``Unsigned Integer Vector``
+        * ``Real``
+        * ``String``
+        * ``String List``
+        * ``Variant``
+        * ``Path``
+        * ``Parameter``
+        * ``Parameter Set``
+        * ``Parameter Manager``
+        * ``Design``
+        * ``Designpoint``
+        * ``Design Container``
+        * ``Bool Vector``
+        * ``Criterion``
+        * ``Criterion Sequence``
+        * ``Designentry``
+        * ``Runinfo Meta``
+        * ``Runinfo``
+        * ``Designpoints``
     password : Optional[str], optional
         Password, by default ``None``.
 
@@ -1118,6 +1178,73 @@ def remove_node(actor_uid: str, password: Optional[str] = None) -> str:
     """
     return _to_json(
         _gen_server_command(command=_REMOVE_NODE, actor_uid=actor_uid, password=password)
+    )
+
+
+def rename_node(actor_uid: str, new_name: str, password: Optional[str] = None) -> str:
+    """Generate JSON string of ``rename_node`` command.
+
+    .. note:: Command is supported for Ansys optiSLang version >= 25.2 only.
+
+    Parameters
+    ----------
+    actor_uid: str
+        Actor uid entry.
+    new_name: str
+        New node name.
+    password : Optional[str], optional
+        Password, by default ``None``.
+
+    Returns
+    -------
+    str
+        JSON string of ``rename_node`` command.
+    """
+    return _to_json(
+        _gen_server_command(
+            command=_RENAME_NODE, actor_uid=actor_uid, args={"name": new_name}, password=password
+        )
+    )
+
+
+def rename_slot(
+    actor_uid: str,
+    new_name: str,
+    slot_uid: Optional[str] = None,
+    slot_name: Optional[str] = None,
+    password: Optional[str] = None,
+) -> str:
+    """Generate JSON string of ``rename_slot`` command.
+
+    .. note:: Command is supported for Ansys optiSLang version >= 25.2 only.
+
+    Parameters
+    ----------
+    actor_uid: str
+        Actor uid entry.
+    slot_uid: Optional[str], optional
+        UID of the slot to rename. Defaults to ``None``.
+        Either slot_uid or slot_name needs to be provided.
+    slot_name: Optional[str], optional
+        Name of the slot to rename. Defaults to ``None``.
+        Either slot_uid or slot_name needs to be provided.
+    new_name: str
+        New slot name.
+    password : Optional[str], optional
+        Password, by default ``None``.
+
+    Returns
+    -------
+    str
+        JSON string of ``rename_slot`` command.
+    """
+    return _to_json(
+        _gen_server_command(
+            command=_RENAME_SLOT,
+            actor_uid=actor_uid,
+            args={"slot_uid": slot_uid, "slot_name": slot_name, "new_name": new_name},
+            password=password,
+        )
     )
 
 
