@@ -150,6 +150,7 @@ class TcpApplicationProxy(Application):
         self.__project = TcpProjectProxy(
             osl_server=self.__osl_server,
             uid=self.__get_project_uid(),
+            logger=self._logger,
         )
 
     def save(self) -> None:
@@ -201,6 +202,11 @@ class TcpApplicationProxy(Application):
             Raised when the timeout float value expires.
         """
         self.__osl_server.save_as(file_path=file_path, force=force, restore=restore, reset=reset)
+        self.__project = TcpProjectProxy(
+            osl_server=self.__osl_server,
+            uid=self.__get_project_uid(),
+            logger=self._logger,
+        )
 
     def save_copy(self, file_path: Union[str, Path]) -> None:
         """Save a copy of the project to a specified location.
