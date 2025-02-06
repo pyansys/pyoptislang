@@ -1,0 +1,6 @@
+uid
+===
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. autoproperty:: Project.uid

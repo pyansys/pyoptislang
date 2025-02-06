@@ -1,0 +1,6 @@
+connect\_to
+===========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: OutputSlot.connect_to

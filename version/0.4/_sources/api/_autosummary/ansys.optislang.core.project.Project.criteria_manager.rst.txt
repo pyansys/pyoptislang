@@ -1,0 +1,6 @@
+﻿criteria\_manager
+=================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. autoproperty:: Project.criteria_manager

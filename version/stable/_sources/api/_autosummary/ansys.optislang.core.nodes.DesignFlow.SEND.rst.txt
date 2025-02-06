@@ -1,0 +1,6 @@
+SEND
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: DesignFlow.SEND

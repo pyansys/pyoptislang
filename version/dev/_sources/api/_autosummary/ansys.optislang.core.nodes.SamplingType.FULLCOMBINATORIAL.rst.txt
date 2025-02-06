@@ -1,0 +1,6 @@
+FULLCOMBINATORIAL
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.FULLCOMBINATORIAL

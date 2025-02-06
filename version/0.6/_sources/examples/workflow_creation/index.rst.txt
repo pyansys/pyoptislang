@@ -1,0 +1,61 @@
+
+
+.. _sphx_glr_examples_workflow_creation:
+
+Create workflow
+---------------
+
+These examples demonstrate how to create workflow using pyOptiSLang.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to to create an ARSM ten bar truss flow in batch mode using pyOpt...">
+
+.. only:: html
+
+  .. image:: /examples/workflow_creation/images/thumb/sphx_glr_01_ten_bar_truss_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_workflow_creation_01_ten_bar_truss.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Ten bar truss</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to create and run a direct optimization.">
+
+.. only:: html
+
+  .. image:: /examples/workflow_creation/images/thumb/sphx_glr_02_3_oscillator_optimization_on_EA_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_workflow_creation_02_3_oscillator_optimization_on_EA.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Oscillator optimization using EA flow</div>
+    </div>
+
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/workflow_creation/01_ten_bar_truss
+   /examples/workflow_creation/02_3_oscillator_optimization_on_EA
+

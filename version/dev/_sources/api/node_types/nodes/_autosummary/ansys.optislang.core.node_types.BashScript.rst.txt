@@ -1,0 +1,6 @@
+﻿BashScript
+==========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: BashScript

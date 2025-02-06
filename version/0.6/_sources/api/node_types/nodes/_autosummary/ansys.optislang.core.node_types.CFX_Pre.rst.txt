@@ -1,0 +1,6 @@
+﻿CFX\_Pre
+========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CFX_Pre

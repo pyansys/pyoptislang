@@ -1,0 +1,6 @@
+﻿get\_result\_files
+==================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.get_result_files

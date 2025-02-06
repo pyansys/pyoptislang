@@ -1,0 +1,6 @@
+﻿unregister\_listener
+====================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: unregister_listener

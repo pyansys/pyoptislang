@@ -1,0 +1,6 @@
+register\_location\_as\_output\_slot
+====================================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.register_location_as_output_slot

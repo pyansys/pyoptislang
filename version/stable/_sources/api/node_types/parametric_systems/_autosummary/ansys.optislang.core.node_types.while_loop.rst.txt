@@ -1,0 +1,6 @@
+﻿while\_loop
+===========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: while_loop

@@ -1,0 +1,6 @@
+to\_dir\_str
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: SlotType.to_dir_str

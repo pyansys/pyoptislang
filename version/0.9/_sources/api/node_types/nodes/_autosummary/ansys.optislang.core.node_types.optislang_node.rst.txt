@@ -1,0 +1,6 @@
+﻿optislang\_node
+===============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: optislang_node

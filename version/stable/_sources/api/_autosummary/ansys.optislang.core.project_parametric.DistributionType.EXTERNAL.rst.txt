@@ -1,0 +1,6 @@
+EXTERNAL
+========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.EXTERNAL

@@ -1,0 +1,6 @@
+﻿Matlab\_mat\_output
+===================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Matlab_mat_output

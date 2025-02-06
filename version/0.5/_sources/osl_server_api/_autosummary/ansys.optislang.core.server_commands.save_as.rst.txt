@@ -1,0 +1,6 @@
+﻿save\_as
+========
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: save_as

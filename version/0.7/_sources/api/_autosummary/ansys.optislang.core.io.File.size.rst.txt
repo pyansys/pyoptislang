@@ -1,0 +1,6 @@
+size
+====
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoproperty:: File.size

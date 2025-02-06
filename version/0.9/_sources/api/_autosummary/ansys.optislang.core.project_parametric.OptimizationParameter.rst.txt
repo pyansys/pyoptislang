@@ -1,0 +1,42 @@
+﻿OptimizationParameter
+=====================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: OptimizationParameter
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      OptimizationParameter.from_dict
+      
+      
+      OptimizationParameter.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      OptimizationParameter.const
+      OptimizationParameter.deterministic_resolution
+      OptimizationParameter.id
+      OptimizationParameter.name
+      OptimizationParameter.range
+      OptimizationParameter.reference_value
+      OptimizationParameter.reference_value_type
+      OptimizationParameter.type
+   
+   

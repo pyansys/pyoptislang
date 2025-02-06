@@ -1,0 +1,6 @@
+﻿get\_missing\_parameters\_names
+===============================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.get_missing_parameters_names

@@ -1,0 +1,6 @@
+﻿port\_range
+===========
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.port_range

@@ -1,0 +1,6 @@
+﻿restart
+=======
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: restart

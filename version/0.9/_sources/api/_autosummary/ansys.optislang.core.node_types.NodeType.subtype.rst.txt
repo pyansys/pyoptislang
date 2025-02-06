@@ -1,0 +1,6 @@
+subtype
+=======
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autoproperty:: NodeType.subtype

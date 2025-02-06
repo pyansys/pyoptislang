@@ -1,0 +1,6 @@
+register\_location\_as\_response
+================================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.register_location_as_response

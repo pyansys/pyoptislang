@@ -1,0 +1,6 @@
+﻿set\_criterion\_property
+========================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.set_criterion_property

@@ -1,0 +1,63 @@
+﻿ConstraintCriterion
+===================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: ConstraintCriterion
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~ConstraintCriterion.__init__
+      ~ConstraintCriterion.from_dict
+      ~ConstraintCriterion.to_dict
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ConstraintCriterion.criterion
+      
+      
+      ConstraintCriterion.expression
+      
+      
+      ConstraintCriterion.expression_value
+      
+      
+      ConstraintCriterion.expression_value_type
+      
+      
+      ConstraintCriterion.limit_expression
+      
+      
+      ConstraintCriterion.limit_expression_value
+      
+      
+      ConstraintCriterion.limit_expression_value_type
+      
+      
+      ConstraintCriterion.name
+      
+      
+      ConstraintCriterion.type
+      
+      
+      ConstraintCriterion.value
+      
+      
+      ConstraintCriterion.value_type
+      
+   
+   

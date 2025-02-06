@@ -1,0 +1,6 @@
+from\_str
+=========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: NodeClassType.from_str

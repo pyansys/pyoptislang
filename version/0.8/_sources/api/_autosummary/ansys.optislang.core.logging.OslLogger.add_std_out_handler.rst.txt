@@ -1,0 +1,6 @@
+add\_std\_out\_handler
+======================
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. automethod:: OslLogger.add_std_out_handler

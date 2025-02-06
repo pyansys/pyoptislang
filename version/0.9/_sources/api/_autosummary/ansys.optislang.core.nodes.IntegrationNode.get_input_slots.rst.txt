@@ -1,0 +1,6 @@
+get\_input\_slots
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.get_input_slots

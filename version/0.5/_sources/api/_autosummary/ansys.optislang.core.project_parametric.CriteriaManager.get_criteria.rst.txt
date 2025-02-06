@@ -1,0 +1,6 @@
+﻿get\_criteria
+=============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: CriteriaManager.get_criteria

@@ -1,0 +1,6 @@
+﻿response\_manager
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: RootSystem.response_manager

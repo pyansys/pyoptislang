@@ -1,0 +1,6 @@
+﻿get\_responses\_names
+=====================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: ResponseManager.get_responses_names

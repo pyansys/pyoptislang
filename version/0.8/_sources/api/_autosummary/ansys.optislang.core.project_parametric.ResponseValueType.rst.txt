@@ -1,0 +1,36 @@
+﻿ResponseValueType
+=================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: ResponseValueType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ResponseValueType.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      ResponseValueType.UNINITIALIZED
+      ResponseValueType.BOOL
+      ResponseValueType.SCALAR
+      ResponseValueType.VECTOR
+      ResponseValueType.SIGNAL
+      ResponseValueType.XYDATA
+   
+   

@@ -1,0 +1,123 @@
+﻿OslServerProcess
+================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoclass:: OslServerProcess
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~OslServerProcess.__init__
+      ~OslServerProcess.is_running
+      ~OslServerProcess.start
+      ~OslServerProcess.terminate
+      ~OslServerProcess.wait_for_finished
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      OslServerProcess.additional_args
+      
+      
+      OslServerProcess.auto_relocate
+      
+      
+      OslServerProcess.batch
+      
+      
+      OslServerProcess.dump_project_state
+      
+      
+      OslServerProcess.enable_tcp_server
+      
+      
+      OslServerProcess.env_vars
+      
+      
+      OslServerProcess.executable
+      
+      
+      OslServerProcess.export_placeholders_file
+      
+      
+      OslServerProcess.export_project_properties_file
+      
+      
+      OslServerProcess.import_placeholders_file
+      
+      
+      OslServerProcess.import_project_properties_file
+      
+      
+      OslServerProcess.listener
+      
+      
+      OslServerProcess.listener_id
+      
+      
+      OslServerProcess.log_commands
+      
+      
+      OslServerProcess.log_process_stderr
+      
+      
+      OslServerProcess.log_process_stdout
+      
+      
+      OslServerProcess.logger
+      
+      
+      OslServerProcess.multi_listener
+      
+      
+      OslServerProcess.no_run
+      
+      
+      OslServerProcess.no_save
+      
+      
+      OslServerProcess.notifications
+      
+      
+      OslServerProcess.opx_project_definition_file
+      
+      
+      OslServerProcess.output_file
+      
+      
+      OslServerProcess.password
+      
+      
+      OslServerProcess.pid
+      
+      
+      OslServerProcess.port_range
+      
+      
+      OslServerProcess.project_path
+      
+      
+      OslServerProcess.reset
+      
+      
+      OslServerProcess.server_info
+      
+      
+      OslServerProcess.shutdown_on_finished
+      
+   
+   

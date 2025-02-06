@@ -1,0 +1,6 @@
+INTEGRATION\_NODE
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: NodeClassType.INTEGRATION_NODE

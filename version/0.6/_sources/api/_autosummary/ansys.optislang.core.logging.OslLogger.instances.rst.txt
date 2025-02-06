@@ -1,0 +1,6 @@
+instances
+=========
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. autoattribute:: OslLogger.instances

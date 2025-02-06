@@ -1,0 +1,6 @@
+LATINHYPERDETEMINISTIC
+======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.LATINHYPERDETEMINISTIC

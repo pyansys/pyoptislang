@@ -1,0 +1,6 @@
+MIXED
+=====
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: ParameterType.MIXED

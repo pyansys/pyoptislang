@@ -1,0 +1,6 @@
+get\_execution\_options
+=======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: Node.get_execution_options

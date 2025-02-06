@@ -1,0 +1,6 @@
+﻿actor\_properties
+=================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: actor_properties

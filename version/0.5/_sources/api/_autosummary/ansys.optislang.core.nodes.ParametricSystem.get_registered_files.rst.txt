@@ -1,0 +1,6 @@
+﻿get\_registered\_files
+======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.get_registered_files

@@ -1,0 +1,33 @@
+﻿DesignStatus
+============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: DesignStatus
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~DesignStatus.from_str
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+   
+   

@@ -1,0 +1,6 @@
+terminate
+=========
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. automethod:: OslServerProcess.terminate

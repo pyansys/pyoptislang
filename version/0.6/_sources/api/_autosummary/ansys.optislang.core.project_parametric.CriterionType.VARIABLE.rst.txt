@@ -1,0 +1,6 @@
+VARIABLE
+========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: CriterionType.VARIABLE

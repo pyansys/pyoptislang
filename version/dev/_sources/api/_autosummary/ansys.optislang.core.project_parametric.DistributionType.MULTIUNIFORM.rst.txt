@@ -1,0 +1,6 @@
+MULTIUNIFORM
+============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.MULTIUNIFORM

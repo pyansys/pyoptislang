@@ -1,0 +1,6 @@
+modify\_parameter
+=================
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. automethod:: ParameterManager.modify_parameter

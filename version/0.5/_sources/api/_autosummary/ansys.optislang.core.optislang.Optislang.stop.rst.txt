@@ -1,0 +1,6 @@
+﻿stop
+====
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.stop

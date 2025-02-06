@@ -1,0 +1,6 @@
+﻿Convert\_OMDB\_to\_BIN\_SoS
+===========================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Convert_OMDB_to_BIN_SoS

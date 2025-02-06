@@ -1,0 +1,6 @@
+﻿get\_osl\_version
+=================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_osl_version

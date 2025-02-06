@@ -1,0 +1,6 @@
+max\_request\_attempts\_register
+================================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. autoproperty:: TcpOslServer.max_request_attempts_register

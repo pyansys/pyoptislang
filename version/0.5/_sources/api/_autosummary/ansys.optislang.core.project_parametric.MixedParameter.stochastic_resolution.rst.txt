@@ -1,0 +1,6 @@
+﻿stochastic\_resolution
+======================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: MixedParameter.stochastic_resolution

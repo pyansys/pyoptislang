@@ -1,0 +1,6 @@
+﻿MotorCAD\_input
+===============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: MotorCAD_input

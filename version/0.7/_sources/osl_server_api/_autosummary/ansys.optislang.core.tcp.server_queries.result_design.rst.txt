@@ -1,0 +1,6 @@
+﻿result\_design
+==============
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: result_design

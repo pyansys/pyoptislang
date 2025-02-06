@@ -1,0 +1,6 @@
+register\_location\_as\_output\_slot
+====================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.register_location_as_output_slot

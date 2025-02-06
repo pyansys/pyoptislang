@@ -1,0 +1,6 @@
+﻿get\_reference\_design
+======================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.get_reference_design

@@ -1,0 +1,6 @@
+﻿disconnect\_slot
+================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: disconnect_slot

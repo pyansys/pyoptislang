@@ -1,0 +1,6 @@
+get\_working\_dir
+=================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.get_working_dir

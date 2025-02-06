@@ -1,0 +1,6 @@
+get\_full\_project\_tree
+========================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_full_project_tree

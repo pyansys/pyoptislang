@@ -1,0 +1,6 @@
+﻿VirtualLab\_output
+==================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: VirtualLab_output

@@ -1,0 +1,58 @@
+﻿Design
+======
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: Design
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      Design.clear_parameters
+      
+      
+      Design.copy_unevaluated_design
+      
+      
+      Design.remove_parameter
+      
+      
+      Design.set_parameter
+      
+      
+      Design.set_parameter_by_name
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      Design.constraints
+      Design.constraints_names
+      Design.feasibility
+      Design.id
+      Design.limit_states
+      Design.limit_states_names
+      Design.objectives
+      Design.objectives_names
+      Design.parameters
+      Design.parameters_names
+      Design.responses
+      Design.responses_names
+      Design.status
+      Design.variables
+      Design.variables_names
+   
+   

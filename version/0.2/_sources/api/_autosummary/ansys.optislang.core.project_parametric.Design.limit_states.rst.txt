@@ -1,0 +1,6 @@
+limit\_states
+=============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: Design.limit_states

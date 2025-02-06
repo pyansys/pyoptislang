@@ -1,0 +1,6 @@
+﻿Lumerical
+=========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Lumerical

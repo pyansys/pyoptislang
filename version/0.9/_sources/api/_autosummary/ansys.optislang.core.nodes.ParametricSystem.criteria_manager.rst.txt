@@ -1,0 +1,6 @@
+criteria\_manager
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: ParametricSystem.criteria_manager

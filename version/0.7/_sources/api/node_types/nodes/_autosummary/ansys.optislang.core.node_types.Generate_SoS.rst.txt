@@ -1,0 +1,6 @@
+﻿Generate\_SoS
+=============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Generate_SoS

@@ -1,0 +1,37 @@
+﻿Node
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: Node
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~Node.__init__
+      ~Node.get_name
+      ~Node.get_parent
+      ~Node.get_parent_name
+      ~Node.get_properties
+      ~Node.get_status
+      ~Node.get_type
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      Node.uid
+      
+   
+   

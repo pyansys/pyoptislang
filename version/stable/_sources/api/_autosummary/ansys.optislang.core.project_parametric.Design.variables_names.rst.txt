@@ -1,0 +1,6 @@
+variables\_names
+================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: Design.variables_names

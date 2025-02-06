@@ -1,0 +1,6 @@
+get\_available\_output\_locations
+=================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.get_available_output_locations

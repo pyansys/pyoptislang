@@ -1,0 +1,6 @@
+objectives
+==========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: Design.objectives

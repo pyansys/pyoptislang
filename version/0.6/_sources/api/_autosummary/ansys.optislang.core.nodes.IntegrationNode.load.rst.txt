@@ -1,0 +1,6 @@
+load
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.load

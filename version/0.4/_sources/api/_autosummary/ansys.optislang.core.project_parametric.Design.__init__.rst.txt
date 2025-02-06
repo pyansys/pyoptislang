@@ -1,0 +1,6 @@
+﻿\_\_init\_\_
+============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: Design.__init__

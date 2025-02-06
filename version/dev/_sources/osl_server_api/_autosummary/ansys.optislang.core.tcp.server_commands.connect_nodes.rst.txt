@@ -1,0 +1,6 @@
+﻿connect\_nodes
+==============
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: connect_nodes

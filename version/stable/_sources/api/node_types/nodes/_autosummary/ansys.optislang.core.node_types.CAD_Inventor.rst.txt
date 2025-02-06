@@ -1,0 +1,6 @@
+﻿CAD\_Inventor
+=============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CAD_Inventor

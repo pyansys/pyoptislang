@@ -1,0 +1,6 @@
+﻿ZEMAX\_output
+=============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: ZEMAX_output

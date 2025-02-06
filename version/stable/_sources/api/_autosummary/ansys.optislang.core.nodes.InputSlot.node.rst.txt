@@ -1,0 +1,6 @@
+node
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: InputSlot.node

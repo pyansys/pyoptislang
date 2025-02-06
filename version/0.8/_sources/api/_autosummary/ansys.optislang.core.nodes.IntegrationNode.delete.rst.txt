@@ -1,0 +1,6 @@
+delete
+======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.delete

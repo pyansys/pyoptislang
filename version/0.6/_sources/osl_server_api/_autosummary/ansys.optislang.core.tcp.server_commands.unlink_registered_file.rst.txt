@@ -1,0 +1,6 @@
+﻿unlink\_registered\_file
+========================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: unlink_registered_file

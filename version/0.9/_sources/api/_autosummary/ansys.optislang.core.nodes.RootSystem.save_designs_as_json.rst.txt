@@ -1,0 +1,6 @@
+save\_designs\_as\_json
+=======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.save_designs_as_json

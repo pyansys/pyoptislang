@@ -1,0 +1,6 @@
+import\_placeholders\_file
+==========================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.import_placeholders_file

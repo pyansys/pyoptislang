@@ -1,0 +1,6 @@
+create\_node
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: System.create_node

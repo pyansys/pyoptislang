@@ -1,0 +1,6 @@
+CENTRALCOMPOSITE
+================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.CENTRALCOMPOSITE

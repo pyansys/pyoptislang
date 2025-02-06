@@ -1,0 +1,6 @@
+﻿no\_run
+=======
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.no_run

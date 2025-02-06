@@ -1,0 +1,6 @@
+JSON
+====
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoattribute:: FileOutputFormat.JSON

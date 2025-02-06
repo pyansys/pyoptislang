@@ -1,0 +1,6 @@
+﻿basic\_project\_info
+====================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: basic_project_info

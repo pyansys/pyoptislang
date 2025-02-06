@@ -1,0 +1,6 @@
+MIXEDTERMS
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.MIXEDTERMS

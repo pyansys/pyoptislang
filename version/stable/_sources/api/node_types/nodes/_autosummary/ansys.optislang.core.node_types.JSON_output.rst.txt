@@ -1,0 +1,6 @@
+﻿JSON\_output
+============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: JSON_output

@@ -1,0 +1,6 @@
+﻿send\_command
+=============
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.send_command

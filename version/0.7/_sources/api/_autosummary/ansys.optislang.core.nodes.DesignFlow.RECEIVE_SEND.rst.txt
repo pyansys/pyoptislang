@@ -1,0 +1,6 @@
+RECEIVE\_SEND
+=============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: DesignFlow.RECEIVE_SEND

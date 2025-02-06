@@ -1,0 +1,6 @@
+﻿JMAG\_Designer\_output
+======================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: JMAG_Designer_output

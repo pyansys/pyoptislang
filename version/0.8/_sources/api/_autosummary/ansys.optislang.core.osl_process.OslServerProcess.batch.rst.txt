@@ -1,0 +1,6 @@
+batch
+=====
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.batch

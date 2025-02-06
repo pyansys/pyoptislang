@@ -1,0 +1,6 @@
+﻿available\_output\_locations
+============================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: available_output_locations

@@ -1,0 +1,6 @@
+﻿actor\_supports
+===============
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: actor_supports

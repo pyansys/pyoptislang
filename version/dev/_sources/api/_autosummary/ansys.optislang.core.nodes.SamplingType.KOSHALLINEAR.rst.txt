@@ -1,0 +1,6 @@
+KOSHALLINEAR
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.KOSHALLINEAR

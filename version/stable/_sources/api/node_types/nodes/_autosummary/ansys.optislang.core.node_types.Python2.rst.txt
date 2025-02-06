@@ -1,0 +1,6 @@
+﻿Python2
+=======
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Python2

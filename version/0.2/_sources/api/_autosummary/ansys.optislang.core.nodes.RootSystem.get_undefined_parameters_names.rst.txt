@@ -1,0 +1,6 @@
+get\_undefined\_parameters\_names
+=================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.get_undefined_parameters_names

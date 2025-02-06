@@ -1,0 +1,6 @@
+﻿shutdown\_on\_finished
+======================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.shutdown_on_finished

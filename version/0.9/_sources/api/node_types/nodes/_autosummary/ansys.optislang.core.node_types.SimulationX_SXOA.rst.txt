@@ -1,0 +1,6 @@
+﻿SimulationX\_SXOA
+=================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: SimulationX_SXOA

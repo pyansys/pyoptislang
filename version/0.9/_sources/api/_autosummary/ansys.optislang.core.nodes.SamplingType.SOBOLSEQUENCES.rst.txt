@@ -1,0 +1,6 @@
+SOBOLSEQUENCES
+==============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.SOBOLSEQUENCES

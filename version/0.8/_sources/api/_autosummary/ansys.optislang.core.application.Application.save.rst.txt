@@ -1,0 +1,6 @@
+save
+====
+
+.. currentmodule:: ansys.optislang.core.application
+
+.. automethod:: Application.save

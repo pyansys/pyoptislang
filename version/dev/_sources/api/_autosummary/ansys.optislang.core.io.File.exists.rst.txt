@@ -1,0 +1,6 @@
+exists
+======
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoproperty:: File.exists

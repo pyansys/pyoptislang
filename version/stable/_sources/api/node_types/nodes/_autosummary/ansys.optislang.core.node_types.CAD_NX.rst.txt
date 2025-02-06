@@ -1,0 +1,6 @@
+﻿CAD\_NX
+=======
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CAD_NX

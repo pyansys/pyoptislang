@@ -1,0 +1,6 @@
+create\_logger
+==============
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. automethod:: OslLogger.create_logger

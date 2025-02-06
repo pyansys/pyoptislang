@@ -1,0 +1,6 @@
+﻿name
+====
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: StochasticParameter.name

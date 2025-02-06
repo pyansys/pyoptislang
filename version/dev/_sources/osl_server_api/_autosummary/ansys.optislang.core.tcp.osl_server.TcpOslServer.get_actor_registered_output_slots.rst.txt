@@ -1,0 +1,6 @@
+get\_actor\_registered\_output\_slots
+=====================================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.get_actor_registered_output_slots

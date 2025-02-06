@@ -1,0 +1,6 @@
+﻿project\_tree\_systems\_with\_properties
+========================================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: project_tree_systems_with_properties

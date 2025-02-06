@@ -1,0 +1,6 @@
+INPUT\_FILE
+===========
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoattribute:: RegisteredFileUsage.INPUT_FILE

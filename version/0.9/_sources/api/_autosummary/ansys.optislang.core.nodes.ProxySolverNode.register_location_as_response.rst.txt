@@ -1,0 +1,6 @@
+register\_location\_as\_response
+================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ProxySolverNode.register_location_as_response

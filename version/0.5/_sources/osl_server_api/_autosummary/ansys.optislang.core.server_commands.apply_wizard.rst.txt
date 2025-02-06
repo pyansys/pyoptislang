@@ -1,0 +1,6 @@
+﻿apply\_wizard
+=============
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: apply_wizard

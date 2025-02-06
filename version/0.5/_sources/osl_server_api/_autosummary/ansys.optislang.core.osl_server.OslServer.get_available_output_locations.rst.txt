@@ -1,0 +1,6 @@
+﻿get\_available\_output\_locations
+=================================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_available_output_locations

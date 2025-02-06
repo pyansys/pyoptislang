@@ -1,0 +1,6 @@
+﻿write\_monitoring\_database
+===========================
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: write_monitoring_database

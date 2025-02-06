@@ -1,0 +1,6 @@
+﻿log\_level
+==========
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. autoattribute:: OslLogger.log_level

@@ -1,0 +1,6 @@
+﻿save\_copy
+==========
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: save_copy

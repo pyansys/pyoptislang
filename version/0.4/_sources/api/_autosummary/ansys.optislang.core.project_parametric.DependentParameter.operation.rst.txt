@@ -1,0 +1,6 @@
+﻿operation
+=========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: DependentParameter.operation

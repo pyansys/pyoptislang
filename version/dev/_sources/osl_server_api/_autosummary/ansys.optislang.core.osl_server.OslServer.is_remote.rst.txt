@@ -1,0 +1,6 @@
+is\_remote
+==========
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. autoproperty:: OslServer.is_remote

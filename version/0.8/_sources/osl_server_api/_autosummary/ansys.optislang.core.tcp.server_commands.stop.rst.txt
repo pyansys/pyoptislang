@@ -1,0 +1,6 @@
+﻿stop
+====
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: stop

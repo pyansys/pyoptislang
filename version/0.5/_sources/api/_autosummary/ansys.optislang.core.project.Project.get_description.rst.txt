@@ -1,0 +1,6 @@
+﻿get\_description
+================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.get_description

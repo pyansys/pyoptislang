@@ -1,0 +1,6 @@
+﻿Viewer\_SoS
+===========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Viewer_SoS

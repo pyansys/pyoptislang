@@ -1,0 +1,6 @@
+comment
+=======
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoproperty:: RegisteredFile.comment

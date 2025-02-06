@@ -1,0 +1,6 @@
+get\_full\_project\_status\_info
+================================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_full_project_status_info

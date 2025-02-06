@@ -1,0 +1,6 @@
+﻿get\_reference\_design
+======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.get_reference_design

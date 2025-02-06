@@ -1,0 +1,6 @@
+set\_actor\_property
+====================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.set_actor_property

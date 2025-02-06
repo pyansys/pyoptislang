@@ -1,0 +1,6 @@
+﻿FloEFDInput
+===========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: FloEFDInput

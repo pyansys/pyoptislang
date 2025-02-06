@@ -1,0 +1,6 @@
+KOSHAL
+======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.KOSHAL

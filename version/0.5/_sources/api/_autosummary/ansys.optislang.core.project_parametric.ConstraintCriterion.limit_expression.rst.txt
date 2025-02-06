@@ -1,0 +1,6 @@
+﻿limit\_expression
+=================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: ConstraintCriterion.limit_expression

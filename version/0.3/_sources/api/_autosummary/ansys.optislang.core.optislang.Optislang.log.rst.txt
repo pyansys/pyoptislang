@@ -1,0 +1,6 @@
+log
+===
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. autoproperty:: Optislang.log

@@ -1,0 +1,6 @@
+parameter\_manager
+==================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. autoproperty:: Project.parameter_manager

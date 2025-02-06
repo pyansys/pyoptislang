@@ -1,0 +1,6 @@
+﻿ETK\_nD
+=======
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: ETK_nD

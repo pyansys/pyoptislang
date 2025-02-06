@@ -1,0 +1,6 @@
+﻿get\_actor\_registered\_input\_slots
+====================================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_actor_registered_input_slots

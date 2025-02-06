@@ -1,0 +1,6 @@
+DOPTIMALQUADRATIC
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.DOPTIMALQUADRATIC

@@ -1,0 +1,6 @@
+shutdown
+========
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.shutdown

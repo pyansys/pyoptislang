@@ -1,0 +1,6 @@
+﻿re\_register\_locations\_as\_parameter
+======================================
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: re_register_locations_as_parameter

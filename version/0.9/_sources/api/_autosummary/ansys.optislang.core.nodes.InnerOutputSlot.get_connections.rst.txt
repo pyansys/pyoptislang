@@ -1,0 +1,6 @@
+get\_connections
+================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: InnerOutputSlot.get_connections

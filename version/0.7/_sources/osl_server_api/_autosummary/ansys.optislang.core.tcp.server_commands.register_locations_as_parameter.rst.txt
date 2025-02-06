@@ -1,0 +1,6 @@
+﻿register\_locations\_as\_parameter
+==================================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: register_locations_as_parameter

@@ -1,0 +1,6 @@
+\_\_init\_\_
+============
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.__init__

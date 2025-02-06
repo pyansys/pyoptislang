@@ -1,0 +1,6 @@
+PARAMETRIC\_SYSTEM
+==================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: NodeClassType.PARAMETRIC_SYSTEM

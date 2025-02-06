@@ -1,0 +1,6 @@
+﻿new
+===
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.new

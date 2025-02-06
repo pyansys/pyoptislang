@@ -1,0 +1,54 @@
+﻿ObjectiveCriterion
+==================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: ObjectiveCriterion
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~ObjectiveCriterion.__init__
+      ~ObjectiveCriterion.from_dict
+      ~ObjectiveCriterion.to_dict
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ObjectiveCriterion.criterion
+      
+      
+      ObjectiveCriterion.expression
+      
+      
+      ObjectiveCriterion.expression_value
+      
+      
+      ObjectiveCriterion.expression_value_type
+      
+      
+      ObjectiveCriterion.name
+      
+      
+      ObjectiveCriterion.type
+      
+      
+      ObjectiveCriterion.value
+      
+      
+      ObjectiveCriterion.value_type
+      
+   
+   

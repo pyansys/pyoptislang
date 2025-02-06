@@ -1,0 +1,6 @@
+statistical\_moments
+====================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: MixedParameter.statistical_moments

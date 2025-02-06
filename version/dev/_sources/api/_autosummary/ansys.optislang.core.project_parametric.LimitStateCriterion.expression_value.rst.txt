@@ -1,0 +1,6 @@
+expression\_value
+=================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: LimitStateCriterion.expression_value

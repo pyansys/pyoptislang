@@ -1,0 +1,6 @@
+﻿create\_input\_slot
+===================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: create_input_slot

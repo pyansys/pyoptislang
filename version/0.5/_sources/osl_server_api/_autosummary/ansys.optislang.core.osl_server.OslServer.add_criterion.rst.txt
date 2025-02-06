@@ -1,0 +1,6 @@
+﻿add\_criterion
+==============
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.add_criterion

@@ -1,0 +1,36 @@
+﻿ComparisonType
+==============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: ComparisonType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~ComparisonType.from_str
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+      
+      
+   
+   

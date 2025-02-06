@@ -1,0 +1,6 @@
+﻿get\_properties
+===============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: Node.get_properties

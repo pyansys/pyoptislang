@@ -1,0 +1,6 @@
+to\_str
+=======
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. automethod:: FileOutputFormat.to_str

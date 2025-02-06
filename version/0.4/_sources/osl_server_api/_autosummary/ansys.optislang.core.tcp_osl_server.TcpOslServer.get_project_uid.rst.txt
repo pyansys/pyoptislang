@@ -1,0 +1,6 @@
+﻿get\_project\_uid
+=================
+
+.. currentmodule:: ansys.optislang.core.tcp_osl_server
+
+.. automethod:: TcpOslServer.get_project_uid

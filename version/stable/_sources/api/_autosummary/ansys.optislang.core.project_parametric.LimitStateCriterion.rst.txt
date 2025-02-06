@@ -1,0 +1,45 @@
+﻿LimitStateCriterion
+===================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: LimitStateCriterion
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      LimitStateCriterion.from_dict
+      
+      
+      LimitStateCriterion.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      LimitStateCriterion.criterion
+      LimitStateCriterion.expression
+      LimitStateCriterion.expression_value
+      LimitStateCriterion.expression_value_type
+      LimitStateCriterion.limit_expression
+      LimitStateCriterion.limit_expression_value
+      LimitStateCriterion.limit_expression_value_type
+      LimitStateCriterion.name
+      LimitStateCriterion.type
+      LimitStateCriterion.value
+      LimitStateCriterion.value_type
+   
+   

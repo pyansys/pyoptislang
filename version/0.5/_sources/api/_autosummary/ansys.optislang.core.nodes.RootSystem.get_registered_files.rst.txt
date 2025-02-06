@@ -1,0 +1,6 @@
+﻿get\_registered\_files
+======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.get_registered_files

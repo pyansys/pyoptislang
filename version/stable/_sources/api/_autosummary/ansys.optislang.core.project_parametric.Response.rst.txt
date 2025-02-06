@@ -1,0 +1,37 @@
+﻿Response
+========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: Response
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      Response.from_dict
+      
+      
+      Response.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      Response.name
+      Response.reference_value
+      Response.reference_value_type
+   
+   

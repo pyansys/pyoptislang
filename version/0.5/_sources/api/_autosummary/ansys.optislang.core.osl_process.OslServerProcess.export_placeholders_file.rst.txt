@@ -1,0 +1,6 @@
+﻿export\_placeholders\_file
+==========================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.export_placeholders_file

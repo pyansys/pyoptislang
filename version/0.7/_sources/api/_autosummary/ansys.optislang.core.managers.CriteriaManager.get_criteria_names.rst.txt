@@ -1,0 +1,6 @@
+get\_criteria\_names
+====================
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. automethod:: CriteriaManager.get_criteria_names

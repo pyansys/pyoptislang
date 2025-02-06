@@ -1,0 +1,6 @@
+from\_str
+=========
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. automethod:: RegisteredFileUsage.from_str

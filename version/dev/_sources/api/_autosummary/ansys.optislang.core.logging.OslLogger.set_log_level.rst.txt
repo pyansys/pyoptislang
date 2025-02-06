@@ -1,0 +1,6 @@
+set\_log\_level
+===============
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. automethod:: OslLogger.set_log_level

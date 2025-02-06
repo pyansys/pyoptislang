@@ -1,0 +1,6 @@
+﻿dispose
+=======
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.dispose

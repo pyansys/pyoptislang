@@ -1,0 +1,6 @@
+version\_string
+===============
+
+.. currentmodule:: ansys.optislang.core.application
+
+.. autoproperty:: Application.version_string

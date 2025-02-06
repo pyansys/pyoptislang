@@ -1,0 +1,6 @@
+﻿distribution\_parameters
+========================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: StochasticParameter.distribution_parameters

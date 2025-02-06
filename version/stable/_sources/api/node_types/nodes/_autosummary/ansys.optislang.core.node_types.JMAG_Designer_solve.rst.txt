@@ -1,0 +1,6 @@
+﻿JMAG\_Designer\_solve
+=====================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: JMAG_Designer_solve

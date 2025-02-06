@@ -1,0 +1,6 @@
+﻿IPG\_Automotive
+===============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: IPG_Automotive

@@ -1,0 +1,46 @@
+﻿Application
+===========
+
+.. currentmodule:: ansys.optislang.core.application
+
+.. autoclass:: Application
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      Application.new
+      
+      
+      Application.open
+      
+      
+      Application.save
+      
+      
+      Application.save_as
+      
+      
+      Application.save_copy
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      Application.project
+      Application.version
+      Application.version_string
+   
+   

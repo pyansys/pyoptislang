@@ -1,0 +1,6 @@
+﻿root\_system
+============
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. autoproperty:: Project.root_system

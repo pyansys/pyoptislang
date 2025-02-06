@@ -1,0 +1,6 @@
+﻿set\_project\_setting
+=====================
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: set_project_setting

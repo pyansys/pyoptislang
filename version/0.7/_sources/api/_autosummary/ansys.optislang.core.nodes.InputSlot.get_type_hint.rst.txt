@@ -1,0 +1,6 @@
+get\_type\_hint
+===============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: InputSlot.get_type_hint

@@ -1,0 +1,33 @@
+﻿Edge
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: Edge
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      Edge.exists
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      Edge.from_slot
+      Edge.to_slot
+   
+   

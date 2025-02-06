@@ -1,0 +1,6 @@
+DOPTIMALLINEAR
+==============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.DOPTIMALLINEAR

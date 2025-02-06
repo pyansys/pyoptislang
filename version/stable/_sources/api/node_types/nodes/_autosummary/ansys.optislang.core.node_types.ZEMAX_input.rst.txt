@@ -1,0 +1,6 @@
+﻿ZEMAX\_input
+============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: ZEMAX_input

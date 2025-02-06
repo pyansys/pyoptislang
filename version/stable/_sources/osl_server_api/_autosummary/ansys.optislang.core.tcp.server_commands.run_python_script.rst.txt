@@ -1,0 +1,6 @@
+﻿run\_python\_script
+===================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: run_python_script

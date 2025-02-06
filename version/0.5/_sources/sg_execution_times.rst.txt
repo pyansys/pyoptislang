@@ -1,0 +1,79 @@
+
+:orphan:
+
+.. _sphx_glr_sg_execution_times:
+
+
+Computation times
+=================
+**00:00.000** total execution time for 15 files **from all galleries**:
+
+.. container::
+
+  .. raw:: html
+
+    <style scoped>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('table.sg-datatable').DataTable({order: [[1, 'desc']]});
+    } );
+    </script>
+
+  .. list-table::
+   :header-rows: 1
+   :class: table table-striped sg-datatable
+
+   * - Example
+     - Time
+     - Mem (MB)
+   * - :ref:`sphx_glr_examples_api_01_basic_queries.py` (``../../examples/api/01_basic_queries.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_evaluate_design_01_ten_bar_truss.py` (``../../examples/evaluate_design/01_ten_bar_truss.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_osl_server_01_basic_queries.py` (``../../examples/osl_server/01_basic_queries.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_osl_server_02_raw_communication.py` (``../../examples/osl_server/02_raw_communication.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_01_ten_bar_truss.py` (``../../examples/run_python_script/01_ten_bar_truss.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_02_1_oscillator_robustness.py` (``../../examples/run_python_script/02_1_oscillator_robustness.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_02_2_oscillator_python_system.py` (``../../examples/run_python_script/02_2_oscillator_python_system.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_02_3_oscillator_optimization_on_EA.py` (``../../examples/run_python_script/02_3_oscillator_optimization_on_EA.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_02_4_oscillator_MOP_sensitivity_and_optimization.py` (``../../examples/run_python_script/02_4_oscillator_MOP_sensitivity_and_optimization.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_02_5_oscillator_calibration_systems.py` (``../../examples/run_python_script/02_5_oscillator_calibration_systems.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_03_etk_abaqus.py` (``../../examples/run_python_script/03_etk_abaqus.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_04_python_node_and_help.py` (``../../examples/run_python_script/04_python_node_and_help.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_05_optimizer_settings.py` (``../../examples/run_python_script/05_optimizer_settings.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_06_sensitivity_settings.py` (``../../examples/run_python_script/06_sensitivity_settings.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_run_python_script_07_simple_calculator.py` (``../../examples/run_python_script/07_simple_calculator.py``)
+     - 00:00.000
+     - 0.0

@@ -1,0 +1,6 @@
+﻿open
+====
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.open

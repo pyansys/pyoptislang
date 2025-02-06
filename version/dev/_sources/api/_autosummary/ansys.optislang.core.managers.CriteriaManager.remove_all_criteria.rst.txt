@@ -1,0 +1,6 @@
+remove\_all\_criteria
+=====================
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. automethod:: CriteriaManager.remove_all_criteria

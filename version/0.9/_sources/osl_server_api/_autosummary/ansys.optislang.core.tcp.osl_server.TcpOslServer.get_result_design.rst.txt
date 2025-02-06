@@ -1,0 +1,6 @@
+get\_result\_design
+===================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.get_result_design

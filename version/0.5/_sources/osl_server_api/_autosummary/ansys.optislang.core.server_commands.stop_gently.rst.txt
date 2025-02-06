@@ -1,0 +1,6 @@
+﻿stop\_gently
+============
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: stop_gently

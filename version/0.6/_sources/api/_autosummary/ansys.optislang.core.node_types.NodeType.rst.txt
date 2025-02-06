@@ -1,0 +1,31 @@
+﻿NodeType
+========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autoclass:: NodeType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      NodeType.id
+      NodeType.osl_class_type
+      NodeType.subtype
+   
+   

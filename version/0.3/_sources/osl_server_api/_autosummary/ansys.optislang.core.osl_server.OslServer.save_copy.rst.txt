@@ -1,0 +1,6 @@
+save\_copy
+==========
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.save_copy

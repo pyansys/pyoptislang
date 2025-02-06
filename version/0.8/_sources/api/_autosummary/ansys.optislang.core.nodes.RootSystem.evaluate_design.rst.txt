@@ -1,0 +1,6 @@
+evaluate\_design
+================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.evaluate_design

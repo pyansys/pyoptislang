@@ -1,0 +1,6 @@
+FULLFACTORIAL
+=============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.FULLFACTORIAL

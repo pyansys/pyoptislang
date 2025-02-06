@@ -1,0 +1,6 @@
+get\_hpc\_licensing\_forwarded\_environment
+===========================================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_hpc_licensing_forwarded_environment

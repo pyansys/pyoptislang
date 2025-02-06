@@ -1,0 +1,6 @@
+﻿NOA2
+====
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: NOA2

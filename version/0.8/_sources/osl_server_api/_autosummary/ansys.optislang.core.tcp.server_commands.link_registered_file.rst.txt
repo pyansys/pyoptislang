@@ -1,0 +1,6 @@
+﻿link\_registered\_file
+======================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: link_registered_file

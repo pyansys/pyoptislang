@@ -1,0 +1,6 @@
+usage
+=====
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoproperty:: RegisteredFile.usage

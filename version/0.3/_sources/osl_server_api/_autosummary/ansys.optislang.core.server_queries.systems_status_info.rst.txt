@@ -1,0 +1,6 @@
+﻿systems\_status\_info
+=====================
+
+.. currentmodule:: ansys.optislang.core.server_queries
+
+.. autofunction:: systems_status_info

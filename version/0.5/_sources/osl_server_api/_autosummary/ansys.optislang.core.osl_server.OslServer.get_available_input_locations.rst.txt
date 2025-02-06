@@ -1,0 +1,6 @@
+﻿get\_available\_input\_locations
+================================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_available_input_locations

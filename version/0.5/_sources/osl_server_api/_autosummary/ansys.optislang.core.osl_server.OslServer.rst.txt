@@ -1,0 +1,91 @@
+﻿OslServer
+=========
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. autoclass:: OslServer
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~OslServer.__init__
+      ~OslServer.add_criterion
+      ~OslServer.dispose
+      ~OslServer.evaluate_design
+      ~OslServer.get_actor_info
+      ~OslServer.get_actor_internal_variables
+      ~OslServer.get_actor_properties
+      ~OslServer.get_actor_registered_input_slots
+      ~OslServer.get_actor_registered_output_slots
+      ~OslServer.get_actor_registered_parameters
+      ~OslServer.get_actor_registered_responses
+      ~OslServer.get_actor_states
+      ~OslServer.get_actor_status_info
+      ~OslServer.get_actor_supports
+      ~OslServer.get_available_input_locations
+      ~OslServer.get_available_nodes
+      ~OslServer.get_available_output_locations
+      ~OslServer.get_basic_project_info
+      ~OslServer.get_criteria
+      ~OslServer.get_criterion
+      ~OslServer.get_doe_size
+      ~OslServer.get_full_project_status_info
+      ~OslServer.get_full_project_tree
+      ~OslServer.get_full_project_tree_with_properties
+      ~OslServer.get_host
+      ~OslServer.get_hpc_licensing_forwarded_environment
+      ~OslServer.get_input_slot_value
+      ~OslServer.get_output_slot_value
+      ~OslServer.get_port
+      ~OslServer.get_project_description
+      ~OslServer.get_project_location
+      ~OslServer.get_project_name
+      ~OslServer.get_project_status
+      ~OslServer.get_project_tree_systems
+      ~OslServer.get_project_tree_systems_with_properties
+      ~OslServer.get_project_uid
+      ~OslServer.get_server_info
+      ~OslServer.get_server_is_alive
+      ~OslServer.get_systems_status_info
+      ~OslServer.get_working_dir
+      ~OslServer.new
+      ~OslServer.open
+      ~OslServer.remove_criteria
+      ~OslServer.remove_criterion
+      ~OslServer.reset
+      ~OslServer.run_python_file
+      ~OslServer.run_python_script
+      ~OslServer.save
+      ~OslServer.save_as
+      ~OslServer.save_copy
+      ~OslServer.send_command
+      ~OslServer.set_criterion_property
+      ~OslServer.shutdown
+      ~OslServer.start
+      ~OslServer.stop
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      OslServer.osl_version
+      
+      
+      OslServer.osl_version_string
+      
+      
+      OslServer.timeout
+      
+   
+   

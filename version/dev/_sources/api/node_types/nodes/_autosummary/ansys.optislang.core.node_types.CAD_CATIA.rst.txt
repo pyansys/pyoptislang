@@ -1,0 +1,6 @@
+﻿CAD\_CATIA
+==========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CAD_CATIA

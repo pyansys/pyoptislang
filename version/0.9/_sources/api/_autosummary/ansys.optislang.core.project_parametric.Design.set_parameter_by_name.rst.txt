@@ -1,0 +1,6 @@
+set\_parameter\_by\_name
+========================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: Design.set_parameter_by_name

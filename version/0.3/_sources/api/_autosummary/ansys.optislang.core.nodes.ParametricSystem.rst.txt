@@ -1,0 +1,49 @@
+﻿ParametricSystem
+================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: ParametricSystem
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~ParametricSystem.__init__
+      ~ParametricSystem.find_node_by_uid
+      ~ParametricSystem.find_nodes_by_name
+      ~ParametricSystem.get_name
+      ~ParametricSystem.get_nodes
+      ~ParametricSystem.get_parent
+      ~ParametricSystem.get_parent_name
+      ~ParametricSystem.get_properties
+      ~ParametricSystem.get_status
+      ~ParametricSystem.get_type
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ParametricSystem.criteria_manager
+      
+      
+      ParametricSystem.parameter_manager
+      
+      
+      ParametricSystem.response_manager
+      
+      
+      ParametricSystem.uid
+      
+   
+   

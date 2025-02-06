@@ -1,0 +1,6 @@
+save\_as
+========
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.save_as

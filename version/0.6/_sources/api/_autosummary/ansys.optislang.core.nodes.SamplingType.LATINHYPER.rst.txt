@@ -1,0 +1,6 @@
+LATINHYPER
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.LATINHYPER

@@ -1,0 +1,6 @@
+﻿set\_registered\_file\_value
+============================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: set_registered_file_value

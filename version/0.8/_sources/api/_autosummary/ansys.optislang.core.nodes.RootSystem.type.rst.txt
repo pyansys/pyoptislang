@@ -1,0 +1,6 @@
+type
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: RootSystem.type

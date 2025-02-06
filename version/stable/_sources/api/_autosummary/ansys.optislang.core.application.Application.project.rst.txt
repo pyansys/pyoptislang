@@ -1,0 +1,6 @@
+project
+=======
+
+.. currentmodule:: ansys.optislang.core.application
+
+.. autoproperty:: Application.project

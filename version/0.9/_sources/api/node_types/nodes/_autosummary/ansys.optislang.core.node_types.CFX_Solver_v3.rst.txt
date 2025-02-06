@@ -1,0 +1,6 @@
+﻿CFX\_Solver\_v3
+===============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CFX_Solver_v3

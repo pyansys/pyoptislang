@@ -1,0 +1,6 @@
+open
+====
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.open

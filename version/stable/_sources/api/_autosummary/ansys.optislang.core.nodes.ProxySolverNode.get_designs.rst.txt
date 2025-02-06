@@ -1,0 +1,6 @@
+get\_designs
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ProxySolverNode.get_designs

@@ -1,0 +1,37 @@
+﻿SlotType
+========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: SlotType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      SlotType.from_str
+      
+      
+      SlotType.to_dir_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      SlotType.INPUT
+      SlotType.OUTPUT
+      SlotType.INNER_INPUT
+      SlotType.INNER_OUTPUT
+   
+   

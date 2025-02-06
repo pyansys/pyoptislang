@@ -1,0 +1,6 @@
+﻿timeouts\_register
+==================
+
+.. currentmodule:: ansys.optislang.core.tcp_osl_server
+
+.. autoproperty:: TcpOslServer.timeouts_register

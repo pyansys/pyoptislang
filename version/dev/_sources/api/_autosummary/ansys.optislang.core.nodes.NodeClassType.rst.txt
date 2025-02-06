@@ -1,0 +1,36 @@
+﻿NodeClassType
+=============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: NodeClassType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      NodeClassType.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      NodeClassType.NODE
+      NodeClassType.SYSTEM
+      NodeClassType.PARAMETRIC_SYSTEM
+      NodeClassType.ROOT_SYSTEM
+      NodeClassType.INTEGRATION_NODE
+      NodeClassType.PROXY_SOLVER
+   
+   

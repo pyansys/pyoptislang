@@ -1,0 +1,6 @@
+﻿CFX\_Partitioner\_v3
+====================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CFX_Partitioner_v3

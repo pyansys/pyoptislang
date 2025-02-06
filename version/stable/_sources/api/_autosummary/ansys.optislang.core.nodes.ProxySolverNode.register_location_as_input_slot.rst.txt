@@ -1,0 +1,6 @@
+register\_location\_as\_input\_slot
+===================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ProxySolverNode.register_location_as_input_slot

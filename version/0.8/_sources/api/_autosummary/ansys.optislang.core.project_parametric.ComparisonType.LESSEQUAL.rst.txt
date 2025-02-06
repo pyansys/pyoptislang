@@ -1,0 +1,6 @@
+LESSEQUAL
+=========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: ComparisonType.LESSEQUAL

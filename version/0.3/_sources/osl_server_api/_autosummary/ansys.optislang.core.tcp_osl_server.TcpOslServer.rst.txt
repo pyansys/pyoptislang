@@ -1,0 +1,65 @@
+﻿TcpOslServer
+============
+
+.. currentmodule:: ansys.optislang.core.tcp_osl_server
+
+.. autoclass:: TcpOslServer
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~TcpOslServer.__init__
+      ~TcpOslServer.dispose
+      ~TcpOslServer.evaluate_design
+      ~TcpOslServer.get_actor_info
+      ~TcpOslServer.get_actor_properties
+      ~TcpOslServer.get_actor_states
+      ~TcpOslServer.get_actor_status_info
+      ~TcpOslServer.get_actor_supports
+      ~TcpOslServer.get_basic_project_info
+      ~TcpOslServer.get_full_project_status_info
+      ~TcpOslServer.get_full_project_tree
+      ~TcpOslServer.get_full_project_tree_with_properties
+      ~TcpOslServer.get_host
+      ~TcpOslServer.get_hpc_licensing_forwarded_environment
+      ~TcpOslServer.get_input_slot_value
+      ~TcpOslServer.get_osl_version
+      ~TcpOslServer.get_osl_version_string
+      ~TcpOslServer.get_output_slot_value
+      ~TcpOslServer.get_port
+      ~TcpOslServer.get_project_description
+      ~TcpOslServer.get_project_location
+      ~TcpOslServer.get_project_name
+      ~TcpOslServer.get_project_status
+      ~TcpOslServer.get_project_tree_systems
+      ~TcpOslServer.get_project_tree_systems_with_properties
+      ~TcpOslServer.get_project_uid
+      ~TcpOslServer.get_server_info
+      ~TcpOslServer.get_server_is_alive
+      ~TcpOslServer.get_systems_status_info
+      ~TcpOslServer.get_timeout
+      ~TcpOslServer.get_working_dir
+      ~TcpOslServer.new
+      ~TcpOslServer.open
+      ~TcpOslServer.reset
+      ~TcpOslServer.run_python_file
+      ~TcpOslServer.run_python_script
+      ~TcpOslServer.save
+      ~TcpOslServer.save_as
+      ~TcpOslServer.save_copy
+      ~TcpOslServer.send_command
+      ~TcpOslServer.set_timeout
+      ~TcpOslServer.shutdown
+      ~TcpOslServer.start
+      ~TcpOslServer.stop
+   
+   
+
+   
+   
+   

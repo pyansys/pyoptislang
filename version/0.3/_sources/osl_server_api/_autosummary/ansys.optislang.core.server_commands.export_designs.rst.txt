@@ -1,0 +1,6 @@
+﻿export\_designs
+===============
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: export_designs

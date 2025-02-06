@@ -1,0 +1,76 @@
+﻿DistributionType
+================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: DistributionType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      DistributionType.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      DistributionType.EXTERNALCOHERENCE
+      DistributionType.UNTYPED
+      DistributionType.EXTERNAL
+      DistributionType.UNIFORM
+      DistributionType.NORMAL
+      DistributionType.TRUNCATEDNORMAL
+      DistributionType.LOGNORMAL
+      DistributionType.EXPONENTIAL
+      DistributionType.RAYLEIGH
+      DistributionType.SMALL_I
+      DistributionType.LARGE_I
+      DistributionType.SMALL_II
+      DistributionType.LARGE_II
+      DistributionType.SMALL_III
+      DistributionType.LARGE_III
+      DistributionType.TRIANGULAR
+      DistributionType.BETA
+      DistributionType.CHI_SQUARE
+      DistributionType.ERLANG
+      DistributionType.FISHER_F
+      DistributionType.GAMMA
+      DistributionType.PARETO
+      DistributionType.WEIBULL
+      DistributionType.EXTREME_VALUE
+      DistributionType.STUDENTS_F
+      DistributionType.INVERSE_NORMAL
+      DistributionType.LOG_GAMMA
+      DistributionType.LOG_NORMAL
+      DistributionType.LORENTZ
+      DistributionType.FISHER_TIPPETT
+      DistributionType.GUMBEL
+      DistributionType.FISHER_Z
+      DistributionType.LAPLACE
+      DistributionType.LEVY
+      DistributionType.LOGISTIC
+      DistributionType.ROSSI
+      DistributionType.FRECHET
+      DistributionType.MAX_TYPE
+      DistributionType.POLYMAP
+      DistributionType.KERNEL
+      DistributionType.BERNOULLI
+      DistributionType.LOG_UNIFORM
+      DistributionType.DISCRETE
+      DistributionType.MULTIUNIFORM
+      DistributionType.LAMBDA
+      DistributionType.POISSON
+   
+   

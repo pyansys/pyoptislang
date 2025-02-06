@@ -1,0 +1,6 @@
+﻿range
+=====
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: OptimizationParameter.range

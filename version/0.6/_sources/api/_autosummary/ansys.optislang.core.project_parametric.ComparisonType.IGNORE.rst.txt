@@ -1,0 +1,6 @@
+IGNORE
+======
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: ComparisonType.IGNORE

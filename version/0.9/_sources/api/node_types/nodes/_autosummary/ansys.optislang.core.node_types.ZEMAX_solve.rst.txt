@@ -1,0 +1,6 @@
+﻿ZEMAX\_solve
+============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: ZEMAX_solve

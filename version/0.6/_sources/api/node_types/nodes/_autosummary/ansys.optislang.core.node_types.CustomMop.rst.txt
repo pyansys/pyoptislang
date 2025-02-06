@@ -1,0 +1,6 @@
+﻿CustomMop
+=========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CustomMop

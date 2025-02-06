@@ -1,0 +1,6 @@
+﻿shutdown
+========
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.shutdown

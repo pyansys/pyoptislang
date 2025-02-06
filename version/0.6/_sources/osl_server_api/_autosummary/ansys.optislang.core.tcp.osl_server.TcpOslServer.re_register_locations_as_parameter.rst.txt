@@ -1,0 +1,6 @@
+re\_register\_locations\_as\_parameter
+======================================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.re_register_locations_as_parameter

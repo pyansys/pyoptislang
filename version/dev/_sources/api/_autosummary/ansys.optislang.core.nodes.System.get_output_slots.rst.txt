@@ -1,0 +1,6 @@
+get\_output\_slots
+==================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: System.get_output_slots

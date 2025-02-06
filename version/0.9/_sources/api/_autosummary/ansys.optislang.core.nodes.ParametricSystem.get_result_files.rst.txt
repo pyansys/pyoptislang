@@ -1,0 +1,6 @@
+get\_result\_files
+==================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.get_result_files

@@ -1,0 +1,6 @@
+CONSTRAINT
+==========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: CriterionType.CONSTRAINT

@@ -1,0 +1,6 @@
+﻿doe\_size
+=========
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: doe_size

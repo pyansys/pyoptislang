@@ -1,0 +1,6 @@
+CSV
+===
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoattribute:: FileOutputFormat.CSV

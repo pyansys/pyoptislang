@@ -1,0 +1,6 @@
+delete\_children\_nodes
+=======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.delete_children_nodes

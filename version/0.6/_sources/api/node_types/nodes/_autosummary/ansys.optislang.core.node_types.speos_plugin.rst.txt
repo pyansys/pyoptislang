@@ -1,0 +1,6 @@
+﻿speos\_plugin
+=============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: speos_plugin

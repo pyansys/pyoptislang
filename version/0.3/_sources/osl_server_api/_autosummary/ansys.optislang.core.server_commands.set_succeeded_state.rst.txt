@@ -1,0 +1,6 @@
+﻿set\_succeeded\_state
+=====================
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: set_succeeded_state

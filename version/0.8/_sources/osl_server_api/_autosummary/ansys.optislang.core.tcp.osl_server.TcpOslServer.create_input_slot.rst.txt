@@ -1,0 +1,6 @@
+create\_input\_slot
+===================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.create_input_slot

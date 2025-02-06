@@ -1,0 +1,6 @@
+﻿ANSA\_input
+===========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: ANSA_input

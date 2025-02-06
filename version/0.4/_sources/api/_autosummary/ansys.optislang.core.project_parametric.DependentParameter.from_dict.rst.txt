@@ -1,0 +1,6 @@
+﻿from\_dict
+==========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: DependentParameter.from_dict

@@ -1,0 +1,6 @@
+﻿GTSUITE\_output
+===============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: GTSUITE_output

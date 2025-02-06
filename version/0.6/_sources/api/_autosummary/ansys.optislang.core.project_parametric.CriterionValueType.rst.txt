@@ -1,0 +1,37 @@
+﻿CriterionValueType
+==================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: CriterionValueType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      CriterionValueType.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      CriterionValueType.UNINITIALIZED
+      CriterionValueType.BOOL
+      CriterionValueType.SCALAR
+      CriterionValueType.VECTOR
+      CriterionValueType.MATRIX
+      CriterionValueType.SIGNAL
+      CriterionValueType.XYDATA
+   
+   

@@ -1,0 +1,6 @@
+﻿clear\_parameters
+=================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: Design.clear_parameters

@@ -1,0 +1,6 @@
+﻿save\_designs\_as
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.save_designs_as

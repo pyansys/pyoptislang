@@ -1,0 +1,6 @@
+﻿from\_str
+=========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: ParameterResolution.from_str

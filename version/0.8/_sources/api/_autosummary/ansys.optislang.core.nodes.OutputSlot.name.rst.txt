@@ -1,0 +1,6 @@
+name
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: OutputSlot.name

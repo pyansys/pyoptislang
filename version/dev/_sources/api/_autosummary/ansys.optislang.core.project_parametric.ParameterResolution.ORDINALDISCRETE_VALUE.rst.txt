@@ -1,0 +1,6 @@
+ORDINALDISCRETE\_VALUE
+======================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: ParameterResolution.ORDINALDISCRETE_VALUE

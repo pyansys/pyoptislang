@@ -1,0 +1,6 @@
+get\_working\_dir
+=================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.get_working_dir

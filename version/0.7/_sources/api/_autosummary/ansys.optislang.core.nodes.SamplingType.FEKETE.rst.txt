@@ -1,0 +1,6 @@
+FEKETE
+======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.FEKETE

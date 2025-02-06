@@ -1,0 +1,6 @@
+﻿set\_parameter
+==============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: Design.set_parameter

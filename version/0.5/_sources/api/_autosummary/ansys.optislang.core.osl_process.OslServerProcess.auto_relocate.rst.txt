@@ -1,0 +1,6 @@
+﻿auto\_relocate
+==============
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.auto_relocate

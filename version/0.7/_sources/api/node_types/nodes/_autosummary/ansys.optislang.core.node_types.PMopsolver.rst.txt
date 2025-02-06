@@ -1,0 +1,6 @@
+﻿PMopsolver
+==========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: PMopsolver

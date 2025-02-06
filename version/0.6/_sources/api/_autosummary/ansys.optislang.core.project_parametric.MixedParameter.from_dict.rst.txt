@@ -1,0 +1,6 @@
+from\_dict
+==========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: MixedParameter.from_dict

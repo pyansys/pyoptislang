@@ -1,0 +1,6 @@
+get\_server\_info
+=================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_server_info

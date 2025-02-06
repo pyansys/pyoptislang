@@ -1,0 +1,34 @@
+﻿DesignFlow
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: DesignFlow
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      DesignFlow.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      DesignFlow.NONE
+      DesignFlow.RECEIVE
+      DesignFlow.SEND
+      DesignFlow.RECEIVE_SEND
+   
+   

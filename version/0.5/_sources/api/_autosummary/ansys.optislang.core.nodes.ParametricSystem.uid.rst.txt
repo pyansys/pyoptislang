@@ -1,0 +1,6 @@
+﻿uid
+===
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: ParametricSystem.uid

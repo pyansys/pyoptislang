@@ -1,0 +1,6 @@
+﻿refresh\_listener\_registration
+===============================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: refresh_listener_registration

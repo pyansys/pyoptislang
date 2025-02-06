@@ -1,0 +1,6 @@
+﻿COMSOL\_output
+==============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: COMSOL_output

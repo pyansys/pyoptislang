@@ -1,0 +1,6 @@
+dispose
+=======
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.dispose

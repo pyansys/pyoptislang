@@ -1,0 +1,6 @@
+last\_modified\_seconds
+=======================
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoproperty:: File.last_modified_seconds

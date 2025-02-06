@@ -1,0 +1,6 @@
+﻿GeoDict\_input
+==============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: GeoDict_input

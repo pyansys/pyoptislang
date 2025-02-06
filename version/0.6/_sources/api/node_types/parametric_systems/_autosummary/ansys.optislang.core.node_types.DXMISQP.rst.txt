@@ -1,0 +1,6 @@
+﻿DXMISQP
+=======
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: DXMISQP

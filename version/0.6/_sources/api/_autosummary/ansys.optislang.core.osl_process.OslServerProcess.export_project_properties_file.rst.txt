@@ -1,0 +1,6 @@
+export\_project\_properties\_file
+=================================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.export_project_properties_file

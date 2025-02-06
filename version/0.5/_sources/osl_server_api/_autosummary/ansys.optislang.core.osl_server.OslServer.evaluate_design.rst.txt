@@ -1,0 +1,6 @@
+﻿evaluate\_design
+================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.evaluate_design

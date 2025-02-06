@@ -1,0 +1,6 @@
+copy\_unevaluated\_design
+=========================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. automethod:: Design.copy_unevaluated_design

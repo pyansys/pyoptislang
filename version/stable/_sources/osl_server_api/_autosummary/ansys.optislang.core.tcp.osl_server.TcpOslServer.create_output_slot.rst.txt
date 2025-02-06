@@ -1,0 +1,6 @@
+create\_output\_slot
+====================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.create_output_slot

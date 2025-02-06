@@ -1,0 +1,6 @@
+INVERSE\_NORMAL
+===============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.INVERSE_NORMAL

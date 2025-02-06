@@ -1,0 +1,6 @@
+﻿find\_nodes\_by\_name
+=====================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: System.find_nodes_by_name

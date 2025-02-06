@@ -1,0 +1,6 @@
+remove\_criterion
+=================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.remove_criterion

@@ -1,0 +1,6 @@
+get\_states\_ids
+================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.get_states_ids

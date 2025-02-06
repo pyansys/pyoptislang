@@ -1,0 +1,6 @@
+DOPTIMAL
+========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.DOPTIMAL

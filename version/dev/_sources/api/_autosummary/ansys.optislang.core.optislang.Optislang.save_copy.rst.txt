@@ -1,0 +1,6 @@
+save\_copy
+==========
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.save_copy

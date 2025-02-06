@@ -1,0 +1,6 @@
+﻿output\_file
+============
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.output_file

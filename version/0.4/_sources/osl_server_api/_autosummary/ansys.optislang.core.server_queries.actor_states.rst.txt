@@ -1,0 +1,6 @@
+﻿actor\_states
+=============
+
+.. currentmodule:: ansys.optislang.core.server_queries
+
+.. autofunction:: actor_states

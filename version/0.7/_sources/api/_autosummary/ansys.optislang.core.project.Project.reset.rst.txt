@@ -1,0 +1,6 @@
+reset
+=====
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.reset

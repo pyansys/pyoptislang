@@ -1,0 +1,6 @@
+OUTPUT\_FILE
+============
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoattribute:: RegisteredFileUsage.OUTPUT_FILE

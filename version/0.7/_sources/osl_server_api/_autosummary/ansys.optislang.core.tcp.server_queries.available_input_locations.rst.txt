@@ -1,0 +1,6 @@
+﻿available\_input\_locations
+===========================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: available_input_locations

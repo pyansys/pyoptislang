@@ -1,0 +1,6 @@
+FISHER\_TIPPETT
+===============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.FISHER_TIPPETT

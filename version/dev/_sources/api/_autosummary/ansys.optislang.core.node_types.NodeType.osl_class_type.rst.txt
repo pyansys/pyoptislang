@@ -1,0 +1,6 @@
+osl\_class\_type
+================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autoproperty:: NodeType.osl_class_type

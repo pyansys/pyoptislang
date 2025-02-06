@@ -1,0 +1,6 @@
+remove\_parameter
+=================
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. automethod:: ParameterManager.remove_parameter

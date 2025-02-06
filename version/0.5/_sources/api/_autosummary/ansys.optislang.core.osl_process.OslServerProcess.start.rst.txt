@@ -1,0 +1,6 @@
+﻿start
+=====
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. automethod:: OslServerProcess.start

@@ -1,0 +1,6 @@
+﻿add\_child\_logger
+==================
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. automethod:: OslLogger.add_child_logger

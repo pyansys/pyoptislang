@@ -1,0 +1,6 @@
+reference\_value
+================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: StochasticParameter.reference_value

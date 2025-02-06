@@ -1,0 +1,6 @@
+register\_location\_as\_internal\_variable
+==========================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.register_location_as_internal_variable

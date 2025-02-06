@@ -1,0 +1,6 @@
+SYSTEM
+======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: NodeClassType.SYSTEM

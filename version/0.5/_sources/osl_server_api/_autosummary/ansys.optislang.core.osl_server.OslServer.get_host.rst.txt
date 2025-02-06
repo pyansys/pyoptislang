@@ -1,0 +1,6 @@
+﻿get\_host
+=========
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_host

@@ -1,0 +1,6 @@
+LOG\_UNIFORM
+============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.LOG_UNIFORM

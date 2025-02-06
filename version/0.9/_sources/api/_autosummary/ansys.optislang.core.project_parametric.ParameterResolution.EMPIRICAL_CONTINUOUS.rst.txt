@@ -1,0 +1,6 @@
+EMPIRICAL\_CONTINUOUS
+=====================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: ParameterResolution.EMPIRICAL_CONTINUOUS

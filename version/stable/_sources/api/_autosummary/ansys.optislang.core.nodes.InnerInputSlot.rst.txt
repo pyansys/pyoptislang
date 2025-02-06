@@ -1,0 +1,41 @@
+﻿InnerInputSlot
+==============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: InnerInputSlot
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      InnerInputSlot.connect_from
+      
+      
+      InnerInputSlot.get_connections
+      
+      
+      InnerInputSlot.get_type_hint
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      InnerInputSlot.name
+      InnerInputSlot.node
+      InnerInputSlot.type
+      InnerInputSlot.type_hint
+   
+   

@@ -1,0 +1,6 @@
+KOSHALQUADRATIC
+===============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.KOSHALQUADRATIC

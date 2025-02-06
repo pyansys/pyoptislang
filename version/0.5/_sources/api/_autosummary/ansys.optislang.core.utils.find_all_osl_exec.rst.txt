@@ -1,0 +1,6 @@
+﻿find\_all\_osl\_exec
+====================
+
+.. currentmodule:: ansys.optislang.core.utils
+
+.. autofunction:: find_all_osl_exec

@@ -1,0 +1,6 @@
+add\_criterion
+==============
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. automethod:: CriteriaManager.add_criterion

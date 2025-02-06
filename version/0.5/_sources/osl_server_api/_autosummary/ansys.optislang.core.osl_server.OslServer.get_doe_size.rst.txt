@@ -1,0 +1,6 @@
+﻿get\_doe\_size
+==============
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_doe_size

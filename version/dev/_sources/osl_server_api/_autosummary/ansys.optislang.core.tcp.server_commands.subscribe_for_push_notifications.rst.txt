@@ -1,0 +1,6 @@
+﻿subscribe\_for\_push\_notifications
+===================================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: subscribe_for_push_notifications

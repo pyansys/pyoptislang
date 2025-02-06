@@ -1,0 +1,6 @@
+\_\_init\_\_
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: Node.__init__

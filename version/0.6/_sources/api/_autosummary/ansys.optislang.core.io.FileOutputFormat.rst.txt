@@ -1,0 +1,32 @@
+﻿FileOutputFormat
+================
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoclass:: FileOutputFormat
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      FileOutputFormat.to_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      FileOutputFormat.JSON
+      FileOutputFormat.CSV
+   
+   

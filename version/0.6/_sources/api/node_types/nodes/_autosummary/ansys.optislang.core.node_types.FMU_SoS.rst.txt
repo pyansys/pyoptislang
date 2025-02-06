@@ -1,0 +1,6 @@
+﻿FMU\_SoS
+========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: FMU_SoS

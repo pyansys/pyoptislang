@@ -1,0 +1,6 @@
+log\_process\_stdout
+====================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.log_process_stdout

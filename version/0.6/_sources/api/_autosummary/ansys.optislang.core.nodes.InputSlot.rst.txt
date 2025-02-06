@@ -1,0 +1,47 @@
+﻿InputSlot
+=========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: InputSlot
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      InputSlot.connect_from
+      
+      
+      InputSlot.create_slot
+      
+      
+      InputSlot.disconnect
+      
+      
+      InputSlot.get_connections
+      
+      
+      InputSlot.get_type_hint
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      InputSlot.name
+      InputSlot.node
+      InputSlot.type
+      InputSlot.type_hint
+   
+   

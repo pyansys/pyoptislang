@@ -1,0 +1,1042 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ten bar truss &#8212; PyOptiSLang</title>
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/ansys_sphinx_theme.css?v=a362721a" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.nerdfonts.com/assets/css/webfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css?v=5c84f910" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+ 
+<link href="../../_static/css/breadcrumbs.css" rel="stylesheet" />
+
+    <script src="../../_static/documentation_options.js?v=cce5339e"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/js/table.js?v=b64f5182"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=ffc8af2d"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/workflow_creation/01_ten_bar_truss';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://optislang.docs.pyansys.com/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.8';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        </script>
+    <link rel="icon" href="../../_static/ansys-favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Oscillator optimization using EA flow" href="02_3_oscillator_optimization_on_EA.html" />
+    <link rel="prev" title="Create workflow" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <link rel="canonical" href="https://optislang.docs.pyansys.com/version/stable/examples/workflow_creation/01_ten_bar_truss.html" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container"><!-- Debugging: html_theme_options =  -->
+
+<!-- If there is no MiliSearch enabled, use the PyData search -->
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+   
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/pyansys-logo-black-cropped.png" class="logo__image only-light" alt="PyOptiSLang - Home"/>
+    <script>document.write(`<img src="../../_static/pyansys-logo-black-cropped.png" class="logo__image only-dark" alt="PyOptiSLang - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../getting_started/index.html">
+                        Getting started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../user_guide/index.html">
+                        User guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../api/index.html">
+                        API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../osl_server_api/index.html">
+                        optiSLang server API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Examples
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item nav-internal" href="../../contributing/index.html">
+                        Contribute
+                      </a>
+                    </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pyoptislang" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+    <div id="announcement_msg"></div>
+<script>
+  fetch("announcement.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(
+      (text) => (document.getElementById("announcement_msg").innerHTML = text),
+    )
+    .catch((error) => console.error(`Fetch problem: ${error.message}`));
+</script>  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../getting_started/index.html">
+                        Getting started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../user_guide/index.html">
+                        User guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../api/index.html">
+                        API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../osl_server_api/index.html">
+                        optiSLang server API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        Examples
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item nav-internal" href="../../contributing/index.html">
+                        Contribute
+                      </a>
+                    </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-3"
+      type="button"
+      class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-3"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-3"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-3">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ansys/pyoptislang" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API usage examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../evaluate_design/index.html">Evaluate designs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osl_server/index.html">Raw optiSLang server communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../run_python_script/index.html">Run Python scripts</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Create workflow</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Ten bar truss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_3_oscillator_optimization_on_EA.html">Oscillator optimization using EA flow</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+         
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="https://docs.pyansys.com/" class="nav-link">PyAnsys</a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a
+        href="../../index.html"
+        class="nav-link"
+        aria-label="Home"
+      >
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a href="../index.html" class="nav-link">Examples</a>
+    </li>
+     
+    <li class="breadcrumb-item">
+      <a href="index.html" class="nav-link">Create workflow</a>
+    </li>
+      
+    <li class="breadcrumb-item active" aria-current="page">Ten bar truss</li>
+    
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#sphx-glr-download-examples-workflow-creation-01-ten-bar-truss-py"><span class="std std-ref">Go to the end</span></a>
+to download the full example code.</p>
+</div>
+<section class="sphx-glr-example-title" id="ten-bar-truss">
+<span id="ref-ten-bar-truss-create-workflow"></span><span id="sphx-glr-examples-workflow-creation-01-ten-bar-truss-py"></span><h1>Ten bar truss<a class="headerlink" href="#ten-bar-truss" title="Link to this heading">#</a></h1>
+<p>This example demonstrates how to to create an ARSM ten bar truss flow in batch mode
+using pyOptiSLang.</p>
+<p>First, the workflow is created, properties are set and project is executed. It explains then
+how you can save the project to a desired location.</p>
+<section id="perform-required-imports">
+<h2>Perform required imports<a class="headerlink" href="#perform-required-imports" title="Link to this heading">#</a></h2>
+<p>Perform the required imports.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="pathlib.Path" class="sphx-glr-backref-module-pathlib sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Path</span></a>
+
+<span class="kn">from</span> <span class="nn">ansys.optislang.core</span> <span class="kn">import</span> <span class="n">Optislang</span>
+<span class="kn">import</span> <span class="nn">ansys.optislang.core.node_types</span> <span class="k">as</span> <span class="nn">node_types</span>
+<span class="kn">from</span> <span class="nn">ansys.optislang.core.nodes</span> <span class="kn">import</span> <span class="n">DesignFlow</span><span class="p">,</span> <span class="n">IntegrationNode</span><span class="p">,</span> <span class="n">ParametricSystem</span>
+<span class="kn">from</span> <span class="nn">ansys.optislang.core.project_parametric</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ComparisonType</span><span class="p">,</span>
+    <span class="n">ConstraintCriterion</span><span class="p">,</span>
+    <span class="n">ObjectiveCriterion</span><span class="p">,</span>
+    <span class="n">OptimizationParameter</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">ansys.optislang.core.utils</span> <span class="kn">import</span> <span class="n">get_osl_exec</span>
+
+<span class="n">example_files_path</span> <span class="o">=</span> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="pathlib.Path" class="sphx-glr-backref-module-pathlib sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Path</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/os.html#os.environ" title="os.environ" class="sphx-glr-backref-module-os sphx-glr-backref-type-py-data"><span class="n">os</span><span class="o">.</span><span class="n">environ</span></a><span class="p">[</span><span class="s2">&quot;OSL_EXAMPLES&quot;</span><span class="p">])</span> <span class="o">/</span> <span class="s2">&quot;00_run_script&quot;</span> <span class="o">/</span> <span class="s2">&quot;ten_bar_truss&quot;</span> <span class="o">/</span> <span class="s2">&quot;files&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="create-optislang-instance">
+<h2>Create optiSLang instance<a class="headerlink" href="#create-optislang-instance" title="Link to this heading">#</a></h2>
+<p>Create the optiSLang instance.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">osl</span> <span class="o">=</span> <span class="n">Optislang</span><span class="p">(</span><span class="n">ini_timeout</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">osl</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="create-workflow">
+<h2>Create workflow<a class="headerlink" href="#create-workflow" title="Link to this heading">#</a></h2>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">root_system</span> <span class="o">=</span> <span class="n">osl</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">root_system</span>
+
+<span class="c1"># Create nodes</span>
+<span class="c1"># ------------</span>
+
+<span class="n">arsm</span><span class="p">:</span> <span class="n">ParametricSystem</span> <span class="o">=</span> <span class="n">root_system</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="n">node_types</span><span class="o">.</span><span class="n">ARSM</span><span class="p">)</span>
+<span class="n">text_input</span><span class="p">:</span> <span class="n">IntegrationNode</span> <span class="o">=</span> <span class="n">arsm</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span>
+    <span class="n">type_</span><span class="o">=</span><span class="n">node_types</span><span class="o">.</span><span class="n">Parameterize</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;infile&quot;</span><span class="p">,</span> <span class="n">design_flow</span><span class="o">=</span><span class="n">DesignFlow</span><span class="o">.</span><span class="n">RECEIVE</span>
+<span class="p">)</span>
+<span class="n">process</span><span class="p">:</span> <span class="n">IntegrationNode</span> <span class="o">=</span> <span class="n">arsm</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="n">node_types</span><span class="o">.</span><span class="n">Process</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;process&quot;</span><span class="p">)</span>
+<span class="n">text_output</span><span class="p">:</span> <span class="n">IntegrationNode</span> <span class="o">=</span> <span class="n">arsm</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span>
+    <span class="n">type_</span><span class="o">=</span><span class="n">node_types</span><span class="o">.</span><span class="n">ETKAsciiOutput</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;outfile&quot;</span><span class="p">,</span> <span class="n">design_flow</span><span class="o">=</span><span class="n">DesignFlow</span><span class="o">.</span><span class="n">SEND</span>
+<span class="p">)</span>
+
+<span class="c1"># Setup nodes</span>
+<span class="c1"># -----------</span>
+
+<span class="c1"># Text input - set file path and register locations as parameters</span>
+<span class="n">text_input</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;FilePath&quot;</span><span class="p">,</span>
+    <span class="n">value</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;base_path_mode&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;ABSOLUTE_PATH&quot;</span><span class="p">},</span>
+            <span class="s2">&quot;split_path&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;head&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;tail&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">example_files_path</span> <span class="o">/</span> <span class="s2">&quot;ten_bar_truss.s&quot;</span><span class="p">)},</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+
+<span class="c1"># register locations as parameters</span>
+<span class="c1"># note: This automatically creates/assigns parameter to the parent system, but parameter properties</span>
+<span class="c1"># (parameter type, range, distribution ...) cannot be set directly and have to be modified</span>
+<span class="c1"># afterward, if needed. Another option is to define parameters in parent system beforehand.</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">location</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;column&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;expandable&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&quot;</span><span class="si">%18.16lf</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="s2">&quot;line&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="mi">23</span> <span class="o">+</span> <span class="n">i</span><span class="p">),</span>
+        <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="sa">r</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;area</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;preferred_format&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;stop_at_line_end&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s2">&quot;force_integer_as_real&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">text_input</span><span class="o">.</span><span class="n">register_location_as_parameter</span><span class="p">(</span>
+        <span class="n">location</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;input_parameter&quot;</span><span class="p">:</span> <span class="n">location</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;input_parameter&quot;</span><span class="p">},</span>
+        <span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;area</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="n">reference_value</span><span class="o">=</span><span class="p">{</span>
+            <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;scalar&quot;</span><span class="p">},</span>
+            <span class="s2">&quot;scalar&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;real&quot;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span> <span class="s2">&quot;imag&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">},</span>
+        <span class="p">},</span>
+    <span class="p">)</span>
+
+<span class="c1"># ARSM - Configure parameters</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">arsm</span><span class="o">.</span><span class="n">parameter_manager</span><span class="o">.</span><span class="n">modify_parameter</span><span class="p">(</span>
+        <span class="n">OptimizationParameter</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;area</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">reference_value</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span>
+    <span class="p">)</span>
+
+<span class="c1"># Process - set properties, input/output files</span>
+<span class="n">process</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s2">&quot;DistinctWorkingDirectory&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">slang_executable</span> <span class="o">=</span> <span class="n">get_osl_exec</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s2">&quot;slang&quot;</span> <span class="o">/</span> <span class="s2">&quot;bin&quot;</span> <span class="o">/</span> <span class="s2">&quot;slang&quot;</span>
+<span class="n">process</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s2">&quot;Command&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">slang_executable</span><span class="p">))</span>
+<span class="n">process</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s2">&quot;Arguments&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;-b&quot;</span><span class="p">,</span> <span class="s2">&quot;ten_bar_truss.s&quot;</span><span class="p">])</span>
+<span class="n">process</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s2">&quot;MaxParallel&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="n">input_files</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;archival&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">},</span>
+        <span class="s2">&quot;initial_path&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;slot_name&quot;</span><span class="p">:</span> <span class="s2">&quot;file_path&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;user_data_1&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;user_data_2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;working_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;ten_bar_truss.s&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+<span class="n">process</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s2">&quot;InputFiles&quot;</span><span class="p">,</span> <span class="n">input_files</span><span class="p">)</span>
+
+<span class="n">output_files</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;archival&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">},</span>
+        <span class="s2">&quot;importance&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;required&quot;</span><span class="p">},</span>
+        <span class="s2">&quot;remove_on_reset&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;slot_name&quot;</span><span class="p">:</span> <span class="s2">&quot;outfile_path&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;working_file_regex&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;working_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;ten_bar_truss.out&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+<span class="n">process</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s2">&quot;OutputFiles&quot;</span><span class="p">,</span> <span class="n">output_files</span><span class="p">)</span>
+
+<span class="c1"># Text Output - set reference file, responses</span>
+<span class="n">outfile</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;base_path_mode&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;WORKING_DIR_RELATIVE&quot;</span><span class="p">},</span>
+        <span class="s2">&quot;split_path&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;head&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">example_files_path</span><span class="p">),</span>
+            <span class="s2">&quot;tail&quot;</span><span class="p">:</span> <span class="s2">&quot;ten_bar_truss.out&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">text_output</span><span class="o">.</span><span class="n">set_property</span><span class="p">(</span><span class="s2">&quot;File&quot;</span><span class="p">,</span> <span class="n">outfile</span><span class="p">)</span>
+
+<span class="c1"># set response `mass`</span>
+<span class="c1"># LineReader with repeater settings</span>
+<span class="n">line_offset</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">line_increment</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">line_repetitions</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1"># TokenReade with repeater settings</span>
+<span class="n">token_offset</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">token_increment</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">token_repetitions</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">mass_location</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;etk_variable&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;etk_ascii_output_variable&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;variable&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;base_path&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;encoding&quot;</span><span class="p">:</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;expression&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;file_path&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">example_files_path</span> <span class="o">/</span> <span class="s2">&quot;ten_bar_truss.out&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;mass&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;prefer_signal&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">&quot;reader&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="s2">&quot;increment&quot;</span><span class="p">:</span> <span class="n">token_increment</span><span class="p">,</span>
+                                    <span class="s2">&quot;max_increment&quot;</span><span class="p">:</span> <span class="n">token_repetitions</span><span class="p">,</span>
+                                    <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="n">token_offset</span><span class="p">,</span>
+                                <span class="p">},</span>
+                                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;increment_repeater&quot;</span><span class="p">,</span>
+                            <span class="p">},</span>
+                            <span class="s2">&quot;separator&quot;</span><span class="p">:</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;token_reader&quot;</span><span class="p">,</span>
+                    <span class="p">},</span>
+                    <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;increment&quot;</span><span class="p">:</span> <span class="n">line_increment</span><span class="p">,</span>
+                            <span class="s2">&quot;max_increment&quot;</span><span class="p">:</span> <span class="n">line_repetitions</span><span class="p">,</span>
+                            <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="n">line_offset</span><span class="p">,</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;increment_repeater&quot;</span><span class="p">,</span>
+                    <span class="p">},</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;line_reader&quot;</span><span class="p">,</span>
+            <span class="p">},</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;file_path&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;base_path_mode&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;ABSOLUTE_PATH&quot;</span><span class="p">},</span>
+            <span class="s2">&quot;split_path&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;head&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;tail&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">example_files_path</span> <span class="o">/</span> <span class="s2">&quot;ten_bar_truss.out&quot;</span><span class="p">),</span>
+            <span class="p">},</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+<span class="n">text_output</span><span class="o">.</span><span class="n">register_location_as_response</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">mass_location</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;mass&quot;</span><span class="p">)</span>
+
+<span class="c1"># set response `stress``</span>
+<span class="n">begin_marker</span> <span class="o">=</span> <span class="s2">&quot;Stress element&quot;</span>
+<span class="n">end_marker</span> <span class="o">=</span> <span class="s2">&quot;Stress element&quot;</span>
+<span class="c1"># Repeated marker settings</span>
+<span class="n">marker_offset</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">marker_increment</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">marker_repetitions</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="c1"># LineReader with repeater settings</span>
+<span class="n">line_offset</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">line_increment</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">line_repetitions</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1"># TokenReader with repeater settings</span>
+<span class="n">token_offset</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">token_increment</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">token_repetitions</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">stress_location</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;etk_variable&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;etk_ascii_output_variable&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;variable&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;base_path&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;encoding&quot;</span><span class="p">:</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;expression&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;file_path&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">example_files_path</span> <span class="o">/</span> <span class="s2">&quot;ten_bar_truss.out&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;stress&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;prefer_signal&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">&quot;reader&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;end_search&quot;</span><span class="p">:</span> <span class="n">end_marker</span><span class="p">,</span>
+                    <span class="s2">&quot;end_search_is_regex&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+                    <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;next&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                        <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                            <span class="s2">&quot;increment&quot;</span><span class="p">:</span> <span class="n">token_increment</span><span class="p">,</span>
+                                            <span class="s2">&quot;max_increment&quot;</span><span class="p">:</span> <span class="n">token_repetitions</span><span class="p">,</span>
+                                            <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="n">token_offset</span><span class="p">,</span>
+                                        <span class="p">},</span>
+                                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;increment_repeater&quot;</span><span class="p">,</span>
+                                    <span class="p">},</span>
+                                    <span class="s2">&quot;separator&quot;</span><span class="p">:</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+                                <span class="p">},</span>
+                                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;token_reader&quot;</span><span class="p">,</span>
+                            <span class="p">},</span>
+                            <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                    <span class="s2">&quot;increment&quot;</span><span class="p">:</span> <span class="n">line_increment</span><span class="p">,</span>
+                                    <span class="s2">&quot;max_increment&quot;</span><span class="p">:</span> <span class="n">line_repetitions</span><span class="p">,</span>
+                                    <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="n">line_offset</span><span class="p">,</span>
+                                <span class="p">},</span>
+                                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;increment_repeater&quot;</span><span class="p">,</span>
+                            <span class="p">},</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;line_reader&quot;</span><span class="p">,</span>
+                    <span class="p">},</span>
+                    <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;repeater&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="s2">&quot;increment&quot;</span><span class="p">:</span> <span class="n">marker_increment</span><span class="p">,</span>
+                            <span class="s2">&quot;max_increment&quot;</span><span class="p">:</span> <span class="n">marker_repetitions</span><span class="p">,</span>
+                            <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="n">marker_offset</span><span class="p">,</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;increment_repeater&quot;</span><span class="p">,</span>
+                    <span class="p">},</span>
+                    <span class="s2">&quot;search&quot;</span><span class="p">:</span> <span class="n">begin_marker</span><span class="p">,</span>
+                    <span class="s2">&quot;search_is_regex&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+                <span class="p">},</span>
+                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;regex_searcher&quot;</span><span class="p">,</span>
+            <span class="p">},</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;file_path&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;base_path_mode&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;ABSOLUTE_PATH&quot;</span><span class="p">},</span>
+            <span class="s2">&quot;split_path&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;head&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;tail&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">example_files_path</span> <span class="o">/</span> <span class="s2">&quot;ten_bar_truss.out&quot;</span><span class="p">),</span>
+            <span class="p">},</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="n">text_output</span><span class="o">.</span><span class="n">register_location_as_response</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="n">stress_location</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;stress&quot;</span><span class="p">)</span>
+
+<span class="c1"># ARSM - add criteria</span>
+<span class="n">arsm</span><span class="o">.</span><span class="n">criteria_manager</span><span class="o">.</span><span class="n">add_criterion</span><span class="p">(</span>
+    <span class="n">ObjectiveCriterion</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;obj&quot;</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="s2">&quot;mass&quot;</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="n">ComparisonType</span><span class="o">.</span><span class="n">MIN</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">arsm</span><span class="o">.</span><span class="n">criteria_manager</span><span class="o">.</span><span class="n">add_criterion</span><span class="p">(</span>
+    <span class="n">ConstraintCriterion</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;c&quot;</span><span class="p">,</span>
+        <span class="n">expression</span><span class="o">=</span><span class="s2">&quot;max(abs(stress))&quot;</span><span class="p">,</span>
+        <span class="n">criterion</span><span class="o">=</span><span class="n">ComparisonType</span><span class="o">.</span><span class="n">LESSEQUAL</span><span class="p">,</span>
+        <span class="n">limit_expression</span><span class="o">=</span><span class="s2">&quot;25000&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Connect nodes</span>
+<span class="c1"># -------------</span>
+<span class="n">text_input_odesign</span> <span class="o">=</span> <span class="n">text_input</span><span class="o">.</span><span class="n">get_output_slots</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;ODesign&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">text_input_opath</span> <span class="o">=</span> <span class="n">text_input</span><span class="o">.</span><span class="n">get_output_slots</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;OPath&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">process_idesign</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">get_input_slots</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;IDesign&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">process_ipath</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">get_input_slots</span><span class="p">(</span><span class="s2">&quot;file_path&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">text_input_odesign</span><span class="o">.</span><span class="n">connect_to</span><span class="p">(</span><span class="n">process_idesign</span><span class="p">)</span>
+<span class="n">text_input_opath</span><span class="o">.</span><span class="n">connect_to</span><span class="p">(</span><span class="n">process_ipath</span><span class="p">)</span>
+
+<span class="n">process_odesign</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">get_output_slots</span><span class="p">(</span><span class="s2">&quot;ODesign&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">process_path</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">get_output_slots</span><span class="p">(</span><span class="s2">&quot;outfile_path&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">text_output_idesign</span> <span class="o">=</span> <span class="n">text_output</span><span class="o">.</span><span class="n">get_input_slots</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;IDesign&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">text_output_ipath</span> <span class="o">=</span> <span class="n">text_output</span><span class="o">.</span><span class="n">get_input_slots</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;IPath&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">process_odesign</span><span class="o">.</span><span class="n">connect_to</span><span class="p">(</span><span class="n">text_output_idesign</span><span class="p">)</span>
+<span class="n">process_path</span><span class="o">.</span><span class="n">connect_to</span><span class="p">(</span><span class="n">text_output_ipath</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="optionally-save-project">
+<h2>Optionally save project<a class="headerlink" href="#optionally-save-project" title="Link to this heading">#</a></h2>
+<p>If you want to save the project to some desired location,
+uncomment and edit these lines:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dir_path</span> <span class="o">=</span> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="pathlib.Path" class="sphx-glr-backref-module-pathlib sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Path</span></a><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;insert-desired-location&gt;&quot;</span><span class="p">)</span>
+<span class="n">project_name</span> <span class="o">=</span> <span class="s2">&quot;ten_bar_truss_workflow.opf&quot;</span>
+<span class="n">osl</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">save_as</span><span class="p">(</span><span class="n">dir_path</span> <span class="o">/</span> <span class="n">project_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="run-workflow">
+<h2>Run workflow<a class="headerlink" href="#run-workflow" title="Link to this heading">#</a></h2>
+<p>Run the workflow created in previous steps.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">osl</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">osl</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="stop-and-cancel-project">
+<h2>Stop and cancel project<a class="headerlink" href="#stop-and-cancel-project" title="Link to this heading">#</a></h2>
+<p>Stop and cancel the project.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">osl</span><span class="o">.</span><span class="n">dispose</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="view-generated-workflow">
+<h2>View generated workflow<a class="headerlink" href="#view-generated-workflow" title="Link to this heading">#</a></h2>
+<p>This image shows the generated workflow.</p>
+<a class="reference internal image-reference" href="../../_images/01_ten_bar_truss_pyOSL_workflow.png"><img alt="Result of script." src="../../_images/01_ten_bar_truss_pyOSL_workflow.png" style="width: 400px;" />
+</a>
+<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-workflow-creation-01-ten-bar-truss-py">
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/1e31fc5c5a73597baf2524575101272e/01_ten_bar_truss.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">01_ten_bar_truss.ipynb</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/fb69891ab6f508758420d8d8c50ee69e/01_ten_bar_truss.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">01_ten_bar_truss.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-zip docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/9f2495eae3ac012dbdf1ec6f85e3e084/01_ten_bar_truss.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">01_ten_bar_truss.zip</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perform-required-imports">Perform required imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-optislang-instance">Create optiSLang instance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-workflow">Create workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optionally-save-project">Optionally save project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-workflow">Run workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-and-cancel-project">Stop and cancel project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#view-generated-workflow">View generated workflow</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item"> 
+<div class="tocsection editthispage">
+  <a href="https://github.com/pyansys/pyoptislang/edit/main/doc/source/examples/workflow_creation/01_ten_bar_truss.rst">
+    <i class="fa-solid fa-pencil"></i>
+       Edit
+    on GitHub  
+  </a>
+</div>
+
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/examples/workflow_creation/01_ten_bar_truss.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright (c) 2024 ANSYS, Inc. All rights reserved.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the
+  <a href="https://sphinxdocs.ansys.com/version/stable/index.html"
+    >Ansys Sphinx Theme</a
+  >
+  0.16.6. <br />Last updated on
+  <span id="date"></span>
+</p>
+<script>
+  var options = { day: "numeric", month: "long", year: "numeric" };
+  var lastModifiedDate = new Date(document.lastModified);
+  var date = lastModifiedDate.toLocaleDateString("en-US", options);
+  document.getElementById("date").innerHTML = date;
+</script></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

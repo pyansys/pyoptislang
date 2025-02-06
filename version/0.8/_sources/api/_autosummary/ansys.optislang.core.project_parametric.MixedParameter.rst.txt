@@ -1,0 +1,47 @@
+﻿MixedParameter
+==============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: MixedParameter
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      MixedParameter.from_dict
+      
+      
+      MixedParameter.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      MixedParameter.const
+      MixedParameter.cov
+      MixedParameter.deterministic_resolution
+      MixedParameter.distribution_parameters
+      MixedParameter.distribution_type
+      MixedParameter.id
+      MixedParameter.name
+      MixedParameter.range
+      MixedParameter.reference_value
+      MixedParameter.reference_value_type
+      MixedParameter.statistical_moments
+      MixedParameter.stochastic_resolution
+      MixedParameter.type
+   
+   

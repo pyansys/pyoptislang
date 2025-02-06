@@ -1,0 +1,6 @@
+UNDETERMINED
+============
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoattribute:: RegisteredFileUsage.UNDETERMINED

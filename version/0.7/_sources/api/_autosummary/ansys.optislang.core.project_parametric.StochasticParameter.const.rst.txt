@@ -1,0 +1,6 @@
+const
+=====
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: StochasticParameter.const

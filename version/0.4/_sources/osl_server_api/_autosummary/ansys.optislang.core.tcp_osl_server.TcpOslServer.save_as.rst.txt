@@ -1,0 +1,6 @@
+﻿save\_as
+========
+
+.. currentmodule:: ansys.optislang.core.tcp_osl_server
+
+.. automethod:: TcpOslServer.save_as

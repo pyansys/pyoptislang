@@ -1,0 +1,43 @@
+﻿ParameterManager
+================
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. autoclass:: ParameterManager
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      ParameterManager.add_parameter
+      
+      
+      ParameterManager.get_parameters
+      
+      
+      ParameterManager.get_parameters_names
+      
+      
+      ParameterManager.modify_parameter
+      
+      
+      ParameterManager.modify_parameter_property
+      
+      
+      ParameterManager.remove_all_parameters
+      
+      
+      ParameterManager.remove_parameter
+      
+   
+   
+
+   
+   
+   

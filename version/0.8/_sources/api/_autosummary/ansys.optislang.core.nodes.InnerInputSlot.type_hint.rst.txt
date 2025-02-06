@@ -1,0 +1,6 @@
+type\_hint
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: InnerInputSlot.type_hint

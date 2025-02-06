@@ -1,0 +1,6 @@
+﻿discovery\_plugin
+=================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: discovery_plugin

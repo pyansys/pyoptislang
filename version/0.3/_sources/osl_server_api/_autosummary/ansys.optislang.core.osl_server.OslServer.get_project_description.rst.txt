@@ -1,0 +1,6 @@
+get\_project\_description
+=========================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_project_description

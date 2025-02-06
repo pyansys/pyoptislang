@@ -1,0 +1,6 @@
+ORTHOLATINHYPERDETEMINISTIC
+===========================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.ORTHOLATINHYPERDETEMINISTIC

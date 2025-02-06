@@ -1,0 +1,6 @@
+﻿listener\_id
+============
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.listener_id

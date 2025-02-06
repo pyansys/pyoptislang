@@ -1,0 +1,37 @@
+﻿RegisteredFileUsage
+===================
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoclass:: RegisteredFileUsage
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      RegisteredFileUsage.from_str
+      
+      
+      RegisteredFileUsage.to_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      RegisteredFileUsage.UNDETERMINED
+      RegisteredFileUsage.INTERMEDIATE_RESULT
+      RegisteredFileUsage.INPUT_FILE
+      RegisteredFileUsage.OUTPUT_FILE
+   
+   

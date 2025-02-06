@@ -1,0 +1,6 @@
+﻿evaluate\_design
+================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.evaluate_design

@@ -1,0 +1,6 @@
+register\_locations\_as\_response
+=================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.register_locations_as_response

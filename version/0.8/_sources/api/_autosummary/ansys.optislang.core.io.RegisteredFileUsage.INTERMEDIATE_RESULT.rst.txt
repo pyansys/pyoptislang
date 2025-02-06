@@ -1,0 +1,6 @@
+INTERMEDIATE\_RESULT
+====================
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoattribute:: RegisteredFileUsage.INTERMEDIATE_RESULT

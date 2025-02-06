@@ -1,0 +1,6 @@
+﻿CalculatorSet
+=============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CalculatorSet

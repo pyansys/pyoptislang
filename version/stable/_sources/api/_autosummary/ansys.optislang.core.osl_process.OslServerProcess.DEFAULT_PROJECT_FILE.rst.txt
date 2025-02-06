@@ -1,0 +1,6 @@
+DEFAULT\_PROJECT\_FILE
+======================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoattribute:: OslServerProcess.DEFAULT_PROJECT_FILE

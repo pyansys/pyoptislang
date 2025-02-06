@@ -1,0 +1,6 @@
+﻿lsdyna\_plugin
+==============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: lsdyna_plugin

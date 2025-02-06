@@ -1,0 +1,6 @@
+PROXY\_SOLVER
+=============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: NodeClassType.PROXY_SOLVER

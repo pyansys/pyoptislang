@@ -1,0 +1,6 @@
+host
+====
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. autoproperty:: OslServer.host

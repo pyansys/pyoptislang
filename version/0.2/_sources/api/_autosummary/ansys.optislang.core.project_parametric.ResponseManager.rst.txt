@@ -1,0 +1,24 @@
+﻿ResponseManager
+===============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: ResponseManager
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~ResponseManager.__init__
+      ~ResponseManager.get_responses
+      ~ResponseManager.get_responses_names
+   
+   
+
+   
+   
+   

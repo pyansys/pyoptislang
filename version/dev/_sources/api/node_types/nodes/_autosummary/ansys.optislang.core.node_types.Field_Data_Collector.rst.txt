@@ -1,0 +1,6 @@
+﻿Field\_Data\_Collector
+======================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Field_Data_Collector

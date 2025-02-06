@@ -1,0 +1,6 @@
+run\_python\_script
+===================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.run_python_script

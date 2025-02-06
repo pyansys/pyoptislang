@@ -1,0 +1,6 @@
+﻿get\_parent
+===========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.get_parent

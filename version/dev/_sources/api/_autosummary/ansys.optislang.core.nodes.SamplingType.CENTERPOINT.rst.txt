@@ -1,0 +1,6 @@
+CENTERPOINT
+===========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.CENTERPOINT

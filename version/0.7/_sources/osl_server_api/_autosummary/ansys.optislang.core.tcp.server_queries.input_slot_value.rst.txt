@@ -1,0 +1,6 @@
+﻿input\_slot\_value
+==================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: input_slot_value

@@ -1,0 +1,6 @@
+RECEIVE
+=======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: DesignFlow.RECEIVE

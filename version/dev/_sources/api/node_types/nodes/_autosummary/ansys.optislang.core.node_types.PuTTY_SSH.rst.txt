@@ -1,0 +1,6 @@
+﻿PuTTY\_SSH
+==========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: PuTTY_SSH

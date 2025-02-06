@@ -1,0 +1,6 @@
+﻿get\_nodes
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: System.get_nodes

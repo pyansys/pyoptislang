@@ -1,0 +1,6 @@
+﻿META\_output
+============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: META_output

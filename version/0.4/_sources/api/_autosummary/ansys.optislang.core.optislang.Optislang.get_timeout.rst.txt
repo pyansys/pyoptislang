@@ -1,0 +1,6 @@
+﻿get\_timeout
+============
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.get_timeout

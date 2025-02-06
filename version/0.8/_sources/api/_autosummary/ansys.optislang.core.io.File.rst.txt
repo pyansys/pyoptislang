@@ -1,0 +1,34 @@
+﻿File
+====
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoclass:: File
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      File.exists
+      File.filename
+      File.last_modified_seconds
+      File.last_modified_str
+      File.path
+      File.size
+   
+   

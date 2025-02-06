@@ -1,0 +1,6 @@
+INPUT
+=====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SlotType.INPUT

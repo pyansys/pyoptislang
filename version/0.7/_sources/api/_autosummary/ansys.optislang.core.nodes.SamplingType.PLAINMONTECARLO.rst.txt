@@ -1,0 +1,6 @@
+PLAINMONTECARLO
+===============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.PLAINMONTECARLO

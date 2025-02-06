@@ -1,0 +1,6 @@
+get\_actor\_status\_info
+========================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_actor_status_info

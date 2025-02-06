@@ -1,0 +1,6 @@
+﻿AmplitudesFromField\_SoS
+========================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: AmplitudesFromField_SoS

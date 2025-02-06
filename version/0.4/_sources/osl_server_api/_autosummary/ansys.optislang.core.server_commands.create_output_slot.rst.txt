@@ -1,0 +1,6 @@
+﻿create\_output\_slot
+====================
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: create_output_slot

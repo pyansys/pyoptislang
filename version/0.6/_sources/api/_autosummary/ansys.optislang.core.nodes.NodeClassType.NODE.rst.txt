@@ -1,0 +1,6 @@
+NODE
+====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: NodeClassType.NODE

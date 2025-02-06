@@ -1,0 +1,6 @@
+BOXBEHNKEN
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.BOXBEHNKEN

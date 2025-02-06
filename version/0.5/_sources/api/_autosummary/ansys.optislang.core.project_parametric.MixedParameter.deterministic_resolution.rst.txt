@@ -1,0 +1,6 @@
+﻿deterministic\_resolution
+=========================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: MixedParameter.deterministic_resolution

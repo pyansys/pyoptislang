@@ -1,0 +1,57 @@
+﻿Optislang
+=========
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. autoclass:: Optislang
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~Optislang.__init__
+      ~Optislang.dispose
+      ~Optislang.get_osl_version
+      ~Optislang.get_osl_version_string
+      ~Optislang.get_timeout
+      ~Optislang.get_working_dir
+      ~Optislang.new
+      ~Optislang.open
+      ~Optislang.reset
+      ~Optislang.run_python_file
+      ~Optislang.run_python_script
+      ~Optislang.save
+      ~Optislang.save_as
+      ~Optislang.save_copy
+      ~Optislang.set_timeout
+      ~Optislang.shutdown
+      ~Optislang.start
+      ~Optislang.stop
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      Optislang.has_active_project
+      
+      
+      Optislang.log
+      
+      
+      Optislang.name
+      
+      
+      Optislang.project
+      
+   
+   

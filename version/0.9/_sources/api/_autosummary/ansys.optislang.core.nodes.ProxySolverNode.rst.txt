@@ -1,0 +1,141 @@
+﻿ProxySolverNode
+===============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: ProxySolverNode
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      ProxySolverNode.control
+      
+      
+      ProxySolverNode.delete
+      
+      
+      ProxySolverNode.exists
+      
+      
+      ProxySolverNode.get_ancestors
+      
+      
+      ProxySolverNode.get_available_input_locations
+      
+      
+      ProxySolverNode.get_available_output_locations
+      
+      
+      ProxySolverNode.get_connections
+      
+      
+      ProxySolverNode.get_designs
+      
+      
+      ProxySolverNode.get_execution_options
+      
+      
+      ProxySolverNode.get_input_slots
+      
+      
+      ProxySolverNode.get_internal_variables
+      
+      
+      ProxySolverNode.get_name
+      
+      
+      ProxySolverNode.get_output_slots
+      
+      
+      ProxySolverNode.get_parent
+      
+      
+      ProxySolverNode.get_parent_name
+      
+      
+      ProxySolverNode.get_property
+      
+      
+      ProxySolverNode.get_registered_files
+      
+      
+      ProxySolverNode.get_registered_input_slots
+      
+      
+      ProxySolverNode.get_registered_output_slots
+      
+      
+      ProxySolverNode.get_registered_parameters
+      
+      
+      ProxySolverNode.get_registered_responses
+      
+      
+      ProxySolverNode.get_result_files
+      
+      
+      ProxySolverNode.get_states_ids
+      
+      
+      ProxySolverNode.get_status
+      
+      
+      ProxySolverNode.load
+      
+      
+      ProxySolverNode.re_register_locations_as_parameter
+      
+      
+      ProxySolverNode.re_register_locations_as_response
+      
+      
+      ProxySolverNode.register_location_as_input_slot
+      
+      
+      ProxySolverNode.register_location_as_internal_variable
+      
+      
+      ProxySolverNode.register_location_as_output_slot
+      
+      
+      ProxySolverNode.register_location_as_parameter
+      
+      
+      ProxySolverNode.register_location_as_response
+      
+      
+      ProxySolverNode.register_locations_as_parameter
+      
+      
+      ProxySolverNode.register_locations_as_response
+      
+      
+      ProxySolverNode.set_designs
+      
+      
+      ProxySolverNode.set_execution_options
+      
+      
+      ProxySolverNode.set_property
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      ProxySolverNode.type
+      ProxySolverNode.uid
+   
+   

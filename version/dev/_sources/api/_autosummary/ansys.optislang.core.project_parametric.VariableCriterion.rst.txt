@@ -1,0 +1,42 @@
+﻿VariableCriterion
+=================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: VariableCriterion
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      VariableCriterion.from_dict
+      
+      
+      VariableCriterion.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      VariableCriterion.criterion
+      VariableCriterion.expression
+      VariableCriterion.expression_value
+      VariableCriterion.expression_value_type
+      VariableCriterion.name
+      VariableCriterion.type
+      VariableCriterion.value
+      VariableCriterion.value_type
+   
+   

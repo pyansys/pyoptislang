@@ -1,0 +1,6 @@
+OUTPUT
+======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SlotType.OUTPUT

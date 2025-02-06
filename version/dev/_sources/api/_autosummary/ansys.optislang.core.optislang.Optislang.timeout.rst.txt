@@ -1,0 +1,6 @@
+timeout
+=======
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. autoproperty:: Optislang.timeout

@@ -1,0 +1,6 @@
+get\_available\_input\_locations
+================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.get_available_input_locations

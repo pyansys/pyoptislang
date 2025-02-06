@@ -1,0 +1,6 @@
+no\_save
+========
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.no_save

@@ -1,0 +1,6 @@
+create\_slot
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: InnerInputSlot.create_slot

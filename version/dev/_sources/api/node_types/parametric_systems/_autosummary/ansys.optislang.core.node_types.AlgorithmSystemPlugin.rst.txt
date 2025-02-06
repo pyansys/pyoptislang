@@ -1,0 +1,6 @@
+﻿AlgorithmSystemPlugin
+=====================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: AlgorithmSystemPlugin

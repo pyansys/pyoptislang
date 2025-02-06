@@ -1,0 +1,6 @@
+﻿hpc\_licensing\_forwarded\_environment
+======================================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: hpc_licensing_forwarded_environment

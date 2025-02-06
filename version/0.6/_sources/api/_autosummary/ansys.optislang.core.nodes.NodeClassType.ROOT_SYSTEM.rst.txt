@@ -1,0 +1,6 @@
+ROOT\_SYSTEM
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: NodeClassType.ROOT_SYSTEM

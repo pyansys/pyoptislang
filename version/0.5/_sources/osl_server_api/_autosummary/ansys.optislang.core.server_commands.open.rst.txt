@@ -1,0 +1,6 @@
+﻿open
+====
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: open

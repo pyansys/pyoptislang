@@ -1,0 +1,6 @@
+get\_input\_slot\_value
+=======================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_input_slot_value

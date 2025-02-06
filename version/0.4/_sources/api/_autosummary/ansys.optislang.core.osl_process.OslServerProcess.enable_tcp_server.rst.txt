@@ -1,0 +1,6 @@
+﻿enable\_tcp\_server
+===================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.enable_tcp_server

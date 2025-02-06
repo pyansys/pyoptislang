@@ -1,0 +1,6 @@
+﻿Mopsolver
+=========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Mopsolver

@@ -1,0 +1,6 @@
+get\_inner\_output\_slots
+=========================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.get_inner_output_slots

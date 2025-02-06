@@ -1,0 +1,6 @@
+set\_execution\_options
+=======================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ProxySolverNode.set_execution_options

@@ -1,0 +1,24 @@
+﻿CriteriaManager
+===============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: CriteriaManager
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~CriteriaManager.__init__
+      ~CriteriaManager.get_criteria
+      ~CriteriaManager.get_criteria_names
+   
+   
+
+   
+   
+   

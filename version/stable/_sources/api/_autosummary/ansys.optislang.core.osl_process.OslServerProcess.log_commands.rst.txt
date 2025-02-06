@@ -1,0 +1,6 @@
+log\_commands
+=============
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.log_commands

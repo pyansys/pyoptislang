@@ -1,0 +1,6 @@
+get\_internal\_variables
+========================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ProxySolverNode.get_internal_variables

@@ -1,0 +1,6 @@
+﻿SPEOS\_Report\_Reader
+=====================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: SPEOS_Report_Reader

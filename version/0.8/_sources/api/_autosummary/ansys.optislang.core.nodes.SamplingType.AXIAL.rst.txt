@@ -1,0 +1,6 @@
+AXIAL
+=====
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoattribute:: SamplingType.AXIAL

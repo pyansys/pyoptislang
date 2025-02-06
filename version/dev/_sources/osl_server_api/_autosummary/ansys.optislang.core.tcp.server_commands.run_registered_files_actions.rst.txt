@@ -1,0 +1,6 @@
+﻿run\_registered\_files\_actions
+===============================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: run_registered_files_actions

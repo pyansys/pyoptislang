@@ -1,0 +1,6 @@
+get\_output\_slot\_value
+========================
+
+.. currentmodule:: ansys.optislang.core.tcp_osl_server
+
+.. automethod:: TcpOslServer.get_output_slot_value

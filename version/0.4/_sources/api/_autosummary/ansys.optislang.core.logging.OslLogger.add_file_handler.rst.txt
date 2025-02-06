@@ -1,0 +1,6 @@
+﻿add\_file\_handler
+==================
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. automethod:: OslLogger.add_file_handler

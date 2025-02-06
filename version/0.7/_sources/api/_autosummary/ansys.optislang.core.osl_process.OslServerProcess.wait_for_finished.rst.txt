@@ -1,0 +1,6 @@
+wait\_for\_finished
+===================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. automethod:: OslServerProcess.wait_for_finished

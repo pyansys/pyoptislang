@@ -1,0 +1,6 @@
+﻿server\_is\_alive
+=================
+
+.. currentmodule:: ansys.optislang.core.server_queries
+
+.. autofunction:: server_is_alive

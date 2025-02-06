@@ -1,0 +1,6 @@
+﻿create\_node
+============
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: create_node

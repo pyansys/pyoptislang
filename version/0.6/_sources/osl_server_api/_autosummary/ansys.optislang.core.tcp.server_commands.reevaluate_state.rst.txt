@@ -1,0 +1,6 @@
+﻿reevaluate\_state
+=================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: reevaluate_state

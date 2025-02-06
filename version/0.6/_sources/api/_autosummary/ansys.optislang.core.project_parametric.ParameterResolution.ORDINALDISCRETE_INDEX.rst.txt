@@ -1,0 +1,6 @@
+ORDINALDISCRETE\_INDEX
+======================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: ParameterResolution.ORDINALDISCRETE_INDEX

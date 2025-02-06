@@ -1,0 +1,38 @@
+﻿RegisteredFile
+==============
+
+.. currentmodule:: ansys.optislang.core.io
+
+.. autoclass:: RegisteredFile
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      RegisteredFile.comment
+      RegisteredFile.exists
+      RegisteredFile.filename
+      RegisteredFile.id
+      RegisteredFile.last_modified_seconds
+      RegisteredFile.last_modified_str
+      RegisteredFile.path
+      RegisteredFile.size
+      RegisteredFile.tag
+      RegisteredFile.usage
+   
+   

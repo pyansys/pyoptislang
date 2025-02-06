@@ -1,0 +1,6 @@
+get\_property
+=============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.get_property

@@ -1,0 +1,6 @@
+distribution\_type
+==================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: MixedParameter.distribution_type

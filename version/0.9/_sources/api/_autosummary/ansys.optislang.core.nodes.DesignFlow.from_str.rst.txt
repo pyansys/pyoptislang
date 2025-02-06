@@ -1,0 +1,6 @@
+from\_str
+=========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: DesignFlow.from_str

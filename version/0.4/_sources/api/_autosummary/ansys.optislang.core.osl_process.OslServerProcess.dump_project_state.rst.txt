@@ -1,0 +1,6 @@
+﻿dump\_project\_state
+====================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.dump_project_state

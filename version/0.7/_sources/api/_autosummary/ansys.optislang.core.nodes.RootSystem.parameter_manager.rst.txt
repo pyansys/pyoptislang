@@ -1,0 +1,6 @@
+parameter\_manager
+==================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: RootSystem.parameter_manager

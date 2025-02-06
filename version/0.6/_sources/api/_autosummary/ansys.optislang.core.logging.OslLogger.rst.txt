@@ -1,0 +1,50 @@
+﻿OslLogger
+=========
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. autoclass:: OslLogger
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      OslLogger.add_child_logger
+      
+      
+      OslLogger.add_file_handler
+      
+      
+      OslLogger.add_instance_logger
+      
+      
+      OslLogger.add_std_out_handler
+      
+      
+      OslLogger.create_logger
+      
+      
+      OslLogger.set_log_level
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      OslLogger.file_handler
+      OslLogger.instances
+      OslLogger.log_level
+      OslLogger.std_out_handler
+   
+   

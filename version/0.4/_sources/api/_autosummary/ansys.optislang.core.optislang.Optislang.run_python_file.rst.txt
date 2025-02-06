@@ -1,0 +1,6 @@
+﻿run\_python\_file
+=================
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. automethod:: Optislang.run_python_file

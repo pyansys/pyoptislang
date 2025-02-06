@@ -1,0 +1,34 @@
+﻿DesignVariable
+==============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: DesignVariable
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~DesignVariable.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      DesignVariable.name
+      
+      
+      DesignVariable.value
+      
+   
+   

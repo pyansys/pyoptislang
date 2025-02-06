@@ -1,0 +1,108 @@
+﻿ParametricSystem
+================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: ParametricSystem
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      ParametricSystem.control
+      
+      
+      ParametricSystem.create_node
+      
+      
+      ParametricSystem.delete
+      
+      
+      ParametricSystem.delete_children_nodes
+      
+      
+      ParametricSystem.exists
+      
+      
+      ParametricSystem.find_node_by_uid
+      
+      
+      ParametricSystem.find_nodes_by_name
+      
+      
+      ParametricSystem.get_ancestors
+      
+      
+      ParametricSystem.get_connections
+      
+      
+      ParametricSystem.get_inner_input_slots
+      
+      
+      ParametricSystem.get_inner_output_slots
+      
+      
+      ParametricSystem.get_input_slots
+      
+      
+      ParametricSystem.get_name
+      
+      
+      ParametricSystem.get_nodes
+      
+      
+      ParametricSystem.get_omdb_files
+      
+      
+      ParametricSystem.get_output_slots
+      
+      
+      ParametricSystem.get_parent
+      
+      
+      ParametricSystem.get_parent_name
+      
+      
+      ParametricSystem.get_property
+      
+      
+      ParametricSystem.get_registered_files
+      
+      
+      ParametricSystem.get_result_files
+      
+      
+      ParametricSystem.get_states_ids
+      
+      
+      ParametricSystem.get_status
+      
+      
+      ParametricSystem.save_designs_as
+      
+      
+      ParametricSystem.set_property
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      ParametricSystem.criteria_manager
+      ParametricSystem.parameter_manager
+      ParametricSystem.response_manager
+      ParametricSystem.type
+      ParametricSystem.uid
+   
+   

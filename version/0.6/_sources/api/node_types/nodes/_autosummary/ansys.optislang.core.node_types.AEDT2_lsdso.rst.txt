@@ -1,0 +1,6 @@
+﻿AEDT2\_lsdso
+============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: AEDT2_lsdso

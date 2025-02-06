@@ -1,0 +1,6 @@
+get\_parent\_name
+=================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: Node.get_parent_name

@@ -1,0 +1,260 @@
+﻿TcpOslServer
+============
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. autoclass:: TcpOslServer
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      TcpOslServer.add_criterion
+      
+      
+      TcpOslServer.connect_nodes
+      
+      
+      TcpOslServer.create_input_slot
+      
+      
+      TcpOslServer.create_node
+      
+      
+      TcpOslServer.create_output_slot
+      
+      
+      TcpOslServer.disconnect_slot
+      
+      
+      TcpOslServer.dispose
+      
+      
+      TcpOslServer.evaluate_design
+      
+      
+      TcpOslServer.get_actor_info
+      
+      
+      TcpOslServer.get_actor_internal_variables
+      
+      
+      TcpOslServer.get_actor_properties
+      
+      
+      TcpOslServer.get_actor_registered_input_slots
+      
+      
+      TcpOslServer.get_actor_registered_output_slots
+      
+      
+      TcpOslServer.get_actor_registered_parameters
+      
+      
+      TcpOslServer.get_actor_registered_responses
+      
+      
+      TcpOslServer.get_actor_states
+      
+      
+      TcpOslServer.get_actor_status_info
+      
+      
+      TcpOslServer.get_actor_supports
+      
+      
+      TcpOslServer.get_available_input_locations
+      
+      
+      TcpOslServer.get_available_nodes
+      
+      
+      TcpOslServer.get_available_output_locations
+      
+      
+      TcpOslServer.get_basic_project_info
+      
+      
+      TcpOslServer.get_criteria
+      
+      
+      TcpOslServer.get_criterion
+      
+      
+      TcpOslServer.get_doe_size
+      
+      
+      TcpOslServer.get_full_project_status_info
+      
+      
+      TcpOslServer.get_full_project_tree
+      
+      
+      TcpOslServer.get_full_project_tree_with_properties
+      
+      
+      TcpOslServer.get_host
+      
+      
+      TcpOslServer.get_hpc_licensing_forwarded_environment
+      
+      
+      TcpOslServer.get_input_slot_value
+      
+      
+      TcpOslServer.get_osl_version
+      
+      
+      TcpOslServer.get_osl_version_string
+      
+      
+      TcpOslServer.get_output_slot_value
+      
+      
+      TcpOslServer.get_port
+      
+      
+      TcpOslServer.get_project_description
+      
+      
+      TcpOslServer.get_project_location
+      
+      
+      TcpOslServer.get_project_name
+      
+      
+      TcpOslServer.get_project_status
+      
+      
+      TcpOslServer.get_project_tree_systems
+      
+      
+      TcpOslServer.get_project_tree_systems_with_properties
+      
+      
+      TcpOslServer.get_project_uid
+      
+      
+      TcpOslServer.get_server_info
+      
+      
+      TcpOslServer.get_server_is_alive
+      
+      
+      TcpOslServer.get_systems_status_info
+      
+      
+      TcpOslServer.get_timeout
+      
+      
+      TcpOslServer.get_working_dir
+      
+      
+      TcpOslServer.load
+      
+      
+      TcpOslServer.new
+      
+      
+      TcpOslServer.open
+      
+      
+      TcpOslServer.re_register_locations_as_parameter
+      
+      
+      TcpOslServer.re_register_locations_as_response
+      
+      
+      TcpOslServer.register_location_as_input_slot
+      
+      
+      TcpOslServer.register_location_as_internal_variable
+      
+      
+      TcpOslServer.register_location_as_output_slot
+      
+      
+      TcpOslServer.register_location_as_parameter
+      
+      
+      TcpOslServer.register_location_as_response
+      
+      
+      TcpOslServer.register_locations_as_parameter
+      
+      
+      TcpOslServer.register_locations_as_response
+      
+      
+      TcpOslServer.remove_criteria
+      
+      
+      TcpOslServer.remove_criterion
+      
+      
+      TcpOslServer.remove_node
+      
+      
+      TcpOslServer.reset
+      
+      
+      TcpOslServer.run_python_file
+      
+      
+      TcpOslServer.run_python_script
+      
+      
+      TcpOslServer.save
+      
+      
+      TcpOslServer.save_as
+      
+      
+      TcpOslServer.save_copy
+      
+      
+      TcpOslServer.send_command
+      
+      
+      TcpOslServer.set_actor_property
+      
+      
+      TcpOslServer.set_criterion_property
+      
+      
+      TcpOslServer.set_timeout
+      
+      
+      TcpOslServer.shutdown
+      
+      
+      TcpOslServer.start
+      
+      
+      TcpOslServer.stop
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      TcpOslServer.host
+      TcpOslServer.max_request_attempts_register
+      TcpOslServer.osl_version
+      TcpOslServer.osl_version_string
+      TcpOslServer.port
+      TcpOslServer.timeout
+      TcpOslServer.timeouts_register
+   
+   

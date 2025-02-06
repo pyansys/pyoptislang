@@ -1,0 +1,6 @@
+LARGE\_I
+========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.LARGE_I

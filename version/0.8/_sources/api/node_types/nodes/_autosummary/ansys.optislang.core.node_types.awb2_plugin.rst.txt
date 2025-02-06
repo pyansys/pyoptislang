@@ -1,0 +1,6 @@
+﻿awb2\_plugin
+============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: awb2_plugin

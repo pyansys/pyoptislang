@@ -1,0 +1,6 @@
+﻿Field\_MOP\_2D\_Nested\_DOE\_SoS
+================================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Field_MOP_2D_Nested_DOE_SoS

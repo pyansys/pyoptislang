@@ -1,0 +1,6 @@
+﻿get\_criterion
+==============
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: get_criterion

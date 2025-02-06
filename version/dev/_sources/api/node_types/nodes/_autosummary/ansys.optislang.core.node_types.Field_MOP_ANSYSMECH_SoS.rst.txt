@@ -1,0 +1,6 @@
+﻿Field\_MOP\_ANSYSMECH\_SoS
+==========================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Field_MOP_ANSYSMECH_SoS

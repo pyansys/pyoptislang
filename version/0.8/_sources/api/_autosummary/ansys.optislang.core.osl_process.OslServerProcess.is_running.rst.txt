@@ -1,0 +1,6 @@
+is\_running
+===========
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. automethod:: OslServerProcess.is_running

@@ -1,0 +1,6 @@
+﻿opx\_project\_definition\_file
+==============================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.opx_project_definition_file

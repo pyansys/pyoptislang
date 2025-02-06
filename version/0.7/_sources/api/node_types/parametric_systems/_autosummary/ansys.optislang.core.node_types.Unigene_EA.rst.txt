@@ -1,0 +1,6 @@
+﻿Unigene\_EA
+===========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Unigene_EA

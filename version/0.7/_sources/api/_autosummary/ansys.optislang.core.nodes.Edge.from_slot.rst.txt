@@ -1,0 +1,6 @@
+from\_slot
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoproperty:: Edge.from_slot

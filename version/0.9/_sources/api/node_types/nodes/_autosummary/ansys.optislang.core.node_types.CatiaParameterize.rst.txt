@@ -1,0 +1,6 @@
+﻿CatiaParameterize
+=================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: CatiaParameterize

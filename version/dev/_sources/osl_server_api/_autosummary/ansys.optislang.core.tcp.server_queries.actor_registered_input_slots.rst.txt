@@ -1,0 +1,6 @@
+﻿actor\_registered\_input\_slots
+===============================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: actor_registered_input_slots

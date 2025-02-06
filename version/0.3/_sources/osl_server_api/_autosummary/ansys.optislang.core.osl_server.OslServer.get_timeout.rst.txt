@@ -1,0 +1,6 @@
+get\_timeout
+============
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_timeout

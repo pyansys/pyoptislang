@@ -1,0 +1,6 @@
+PENDING
+=======
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DesignStatus.PENDING

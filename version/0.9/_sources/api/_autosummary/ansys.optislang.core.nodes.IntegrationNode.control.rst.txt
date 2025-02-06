@@ -1,0 +1,6 @@
+control
+=======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.control

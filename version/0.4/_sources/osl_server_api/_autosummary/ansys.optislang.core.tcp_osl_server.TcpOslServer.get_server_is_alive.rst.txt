@@ -1,0 +1,6 @@
+﻿get\_server\_is\_alive
+======================
+
+.. currentmodule:: ansys.optislang.core.tcp_osl_server
+
+.. automethod:: TcpOslServer.get_server_is_alive

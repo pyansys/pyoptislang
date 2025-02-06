@@ -1,0 +1,38 @@
+﻿ParameterResolution
+===================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: ParameterResolution
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ParameterResolution.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      ParameterResolution.CONTINUOUS
+      ParameterResolution.ORDINALDISCRETE_VALUE
+      ParameterResolution.ORDINALDISCRETE_INDEX
+      ParameterResolution.NOMINALDISCRETE
+      ParameterResolution.DETERMINISTIC
+      ParameterResolution.MARGINALDISTRIBUTION
+      ParameterResolution.EMPIRICAL_DISCRETE
+      ParameterResolution.EMPIRICAL_CONTINUOUS
+   
+   

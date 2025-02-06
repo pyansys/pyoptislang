@@ -1,0 +1,6 @@
+﻿get\_available\_nodes
+=====================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_available_nodes

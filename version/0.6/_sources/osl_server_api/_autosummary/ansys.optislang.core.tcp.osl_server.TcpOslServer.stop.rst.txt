@@ -1,0 +1,6 @@
+stop
+====
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.stop

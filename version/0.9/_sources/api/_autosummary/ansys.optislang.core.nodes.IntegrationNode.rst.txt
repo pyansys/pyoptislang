@@ -1,0 +1,135 @@
+﻿IntegrationNode
+===============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: IntegrationNode
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      IntegrationNode.control
+      
+      
+      IntegrationNode.delete
+      
+      
+      IntegrationNode.exists
+      
+      
+      IntegrationNode.get_ancestors
+      
+      
+      IntegrationNode.get_available_input_locations
+      
+      
+      IntegrationNode.get_available_output_locations
+      
+      
+      IntegrationNode.get_connections
+      
+      
+      IntegrationNode.get_execution_options
+      
+      
+      IntegrationNode.get_input_slots
+      
+      
+      IntegrationNode.get_internal_variables
+      
+      
+      IntegrationNode.get_name
+      
+      
+      IntegrationNode.get_output_slots
+      
+      
+      IntegrationNode.get_parent
+      
+      
+      IntegrationNode.get_parent_name
+      
+      
+      IntegrationNode.get_property
+      
+      
+      IntegrationNode.get_registered_files
+      
+      
+      IntegrationNode.get_registered_input_slots
+      
+      
+      IntegrationNode.get_registered_output_slots
+      
+      
+      IntegrationNode.get_registered_parameters
+      
+      
+      IntegrationNode.get_registered_responses
+      
+      
+      IntegrationNode.get_result_files
+      
+      
+      IntegrationNode.get_states_ids
+      
+      
+      IntegrationNode.get_status
+      
+      
+      IntegrationNode.load
+      
+      
+      IntegrationNode.re_register_locations_as_parameter
+      
+      
+      IntegrationNode.re_register_locations_as_response
+      
+      
+      IntegrationNode.register_location_as_input_slot
+      
+      
+      IntegrationNode.register_location_as_internal_variable
+      
+      
+      IntegrationNode.register_location_as_output_slot
+      
+      
+      IntegrationNode.register_location_as_parameter
+      
+      
+      IntegrationNode.register_location_as_response
+      
+      
+      IntegrationNode.register_locations_as_parameter
+      
+      
+      IntegrationNode.register_locations_as_response
+      
+      
+      IntegrationNode.set_execution_options
+      
+      
+      IntegrationNode.set_property
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      IntegrationNode.type
+      IntegrationNode.uid
+   
+   

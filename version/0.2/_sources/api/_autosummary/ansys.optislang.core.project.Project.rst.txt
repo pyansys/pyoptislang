@@ -1,0 +1,49 @@
+﻿Project
+=======
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. autoclass:: Project
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~Project.__init__
+      ~Project.evaluate_design
+      ~Project.get_description
+      ~Project.get_location
+      ~Project.get_name
+      ~Project.get_reference_design
+      ~Project.get_status
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      Project.criteria_manager
+      
+      
+      Project.parameter_manager
+      
+      
+      Project.response_manager
+      
+      
+      Project.root_system
+      
+      
+      Project.uid
+      
+   
+   

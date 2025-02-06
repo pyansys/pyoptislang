@@ -1,0 +1,36 @@
+﻿ParameterValueType
+==================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: ParameterValueType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ParameterValueType.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      ParameterValueType.UNINITIALIZED
+      ParameterValueType.BOOL
+      ParameterValueType.REAL
+      ParameterValueType.INTEGER
+      ParameterValueType.STRING
+      ParameterValueType.VARIANT
+   
+   

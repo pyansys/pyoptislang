@@ -1,0 +1,6 @@
+﻿Fluent\_solver
+==============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Fluent_solver

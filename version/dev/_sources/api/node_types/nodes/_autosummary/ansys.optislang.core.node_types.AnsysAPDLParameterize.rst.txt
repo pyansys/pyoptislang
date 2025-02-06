@@ -1,0 +1,6 @@
+﻿AnsysAPDLParameterize
+=====================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: AnsysAPDLParameterize

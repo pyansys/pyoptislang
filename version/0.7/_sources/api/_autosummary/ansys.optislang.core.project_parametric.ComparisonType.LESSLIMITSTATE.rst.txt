@@ -1,0 +1,6 @@
+LESSLIMITSTATE
+==============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: ComparisonType.LESSLIMITSTATE

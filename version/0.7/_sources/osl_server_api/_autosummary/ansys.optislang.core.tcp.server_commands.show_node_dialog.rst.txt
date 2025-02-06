@@ -1,0 +1,6 @@
+﻿show\_node\_dialog
+==================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: show_node_dialog

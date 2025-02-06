@@ -1,0 +1,6 @@
+get\_status
+===========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: System.get_status

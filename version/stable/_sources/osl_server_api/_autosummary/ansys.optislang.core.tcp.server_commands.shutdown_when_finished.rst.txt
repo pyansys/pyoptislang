@@ -1,0 +1,6 @@
+﻿shutdown\_when\_finished
+========================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_commands
+
+.. autofunction:: shutdown_when_finished

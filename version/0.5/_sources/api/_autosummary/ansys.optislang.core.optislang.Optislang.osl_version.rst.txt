@@ -1,0 +1,6 @@
+﻿osl\_version
+============
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. autoproperty:: Optislang.osl_version

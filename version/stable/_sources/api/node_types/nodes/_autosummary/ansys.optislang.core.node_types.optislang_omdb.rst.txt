@@ -1,0 +1,6 @@
+﻿optislang\_omdb
+===============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: optislang_omdb

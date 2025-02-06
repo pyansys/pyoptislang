@@ -1,0 +1,6 @@
+exists
+======
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.exists

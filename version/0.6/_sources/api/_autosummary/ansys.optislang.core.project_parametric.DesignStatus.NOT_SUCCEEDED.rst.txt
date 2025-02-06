@@ -1,0 +1,6 @@
+NOT\_SUCCEEDED
+==============
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DesignStatus.NOT_SUCCEEDED

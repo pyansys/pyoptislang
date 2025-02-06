@@ -1,0 +1,6 @@
+feasibility
+===========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: Design.feasibility

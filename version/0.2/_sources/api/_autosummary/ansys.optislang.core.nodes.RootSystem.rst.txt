@@ -1,0 +1,53 @@
+﻿RootSystem
+==========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: RootSystem
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      ~RootSystem.__init__
+      ~RootSystem.evaluate_design
+      ~RootSystem.find_node_by_uid
+      ~RootSystem.find_nodes_by_name
+      ~RootSystem.get_missing_parameters_names
+      ~RootSystem.get_name
+      ~RootSystem.get_nodes
+      ~RootSystem.get_parent
+      ~RootSystem.get_parent_name
+      ~RootSystem.get_properties
+      ~RootSystem.get_reference_design
+      ~RootSystem.get_status
+      ~RootSystem.get_type
+      ~RootSystem.get_undefined_parameters_names
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      RootSystem.criteria_manager
+      
+      
+      RootSystem.parameter_manager
+      
+      
+      RootSystem.response_manager
+      
+      
+      RootSystem.uid
+      
+   
+   

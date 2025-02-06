@@ -1,0 +1,6 @@
+SMALL\_II
+=========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.SMALL_II

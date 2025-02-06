@@ -1,0 +1,6 @@
+register\_location\_as\_parameter
+=================================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.register_location_as_parameter

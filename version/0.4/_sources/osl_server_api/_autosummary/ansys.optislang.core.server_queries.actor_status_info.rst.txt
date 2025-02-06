@@ -1,0 +1,6 @@
+﻿actor\_status\_info
+===================
+
+.. currentmodule:: ansys.optislang.core.server_queries
+
+.. autofunction:: actor_status_info

@@ -1,0 +1,53 @@
+﻿SamplingType
+============
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. autoclass:: SamplingType
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      SamplingType.from_str
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      SamplingType.CENTERPOINT
+      SamplingType.FULLFACTORIAL
+      SamplingType.AXIAL
+      SamplingType.STARPOINTS
+      SamplingType.KOSHAL
+      SamplingType.CENTRALCOMPOSITE
+      SamplingType.MIXEDTERMS
+      SamplingType.LATINHYPER
+      SamplingType.LATINHYPERDETEMINISTIC
+      SamplingType.OPTIMIZEDLATINHYPER
+      SamplingType.ORTHOLATINHYPERDETEMINISTIC
+      SamplingType.SOBOLSEQUENCES
+      SamplingType.PLAINMONTECARLO
+      SamplingType.DOPTIMAL
+      SamplingType.DOPTIMALLINEAR
+      SamplingType.DOPTIMALQUADRATIC
+      SamplingType.DOPTIMALQUADRATICNOMIXED
+      SamplingType.KOSHALLINEAR
+      SamplingType.KOSHALQUADRATIC
+      SamplingType.FEKETE
+      SamplingType.BOXBEHNKEN
+      SamplingType.FULLCOMBINATORIAL
+      SamplingType.ADVANCEDLATINHYPER
+   
+   

@@ -1,0 +1,921 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OslServerProcess &#8212; PyOptiSLang</title>
+    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/ansys_sphinx_theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    
+        <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/table.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/_autosummary/ansys.optislang.core.osl_process.OslServerProcess';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://optislang.docs.pyansys.com/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3';
+        </script>
+    <link rel="icon" href="../../_static/ansys-favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="__init__" href="ansys.optislang.core.osl_process.OslServerProcess.__init__.html" />
+    <link rel="prev" title="optiSLang process" href="../osl_process.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <link rel="canonical" href="https://optislang.docs.pyansys.com/version/stable/api/_autosummary/ansys.optislang.core.osl_process.OslServerProcess.html" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container"><!-- Debugging: html_theme_options =  -->
+
+  <!-- If there is no MiliSearch enabled, use the PyData search -->
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+  </div>
+  
+    
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/pyansys-logo-black-cropped.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/pyansys-logo-black-cropped.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../getting_started/index.html">
+                        Getting started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../user_guide/index.html">
+                        User guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../osl_server_api/index.html">
+                        optiSLang server API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../examples/index.html">
+                        Examples
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../contributing/index.html">
+                        Contribute
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown">
+      0.3  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyansys/pyoptislang" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+
+    
+    <div id="announcement_msg"></div>
+<script>
+  fetch("announcement.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(text => document.getElementById("announcement_msg").innerHTML = text)
+    .catch((error) => console.error(`Fetch problem: ${error.message}`));
+</script>
+    
+
+    
+    <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../../index.html">PyOptiSLang</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="../index.html" >API reference</a> » </li>
+          <li class="nav-item nav-item-2"><a href="../osl_process.html" accesskey="U">optiSLang process</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">OslServerProcess</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../getting_started/index.html">
+                        Getting started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../user_guide/index.html">
+                        User guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../osl_server_api/index.html">
+                        optiSLang server API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../examples/index.html">
+                        Examples
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../contributing/index.html">
+                        Contribute
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown">
+      0.3  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyansys/pyoptislang" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../optislang.html">Optislang</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../osl_process.html">optiSLang process</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">OslServerProcess</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.__init__.html">__init__</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.is_running.html">is_running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.start.html">start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.terminate.html">terminate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.wait_for_finished.html">wait_for_finished</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.additional_args.html">additional_args</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.auto_relocate.html">auto_relocate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.batch.html">batch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.dump_project_state.html">dump_project_state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.enable_tcp_server.html">enable_tcp_server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.env_vars.html">env_vars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.executable.html">executable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.export_placeholders_file.html">export_placeholders_file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.export_project_properties_file.html">export_project_properties_file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.import_placeholders_file.html">import_placeholders_file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.import_project_properties_file.html">import_project_properties_file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.listener.html">listener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.listener_id.html">listener_id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.log_commands.html">log_commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.log_process_stderr.html">log_process_stderr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.log_process_stdout.html">log_process_stdout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.logger.html">logger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.multi_listener.html">multi_listener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.no_run.html">no_run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.no_save.html">no_save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.notifications.html">notifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.opx_project_definition_file.html">opx_project_definition_file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.output_file.html">output_file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.password.html">password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.pid.html">pid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.port_range.html">port_range</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.project_path.html">project_path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.reset.html">reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.server_info.html">server_info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.shutdown_on_finished.html">shutdown_on_finished</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodes.html">Nodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project_parametric.html">Project parametric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../logging.html">Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils.html">Helper functions</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="oslserverprocess">
+<h1>OslServerProcess<a class="headerlink" href="#oslserverprocess" title="Permalink to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ansys.optislang.core.osl_process.OslServerProcess">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.optislang.core.osl_process.</span></span><span class="sig-name descname"><span class="pre">OslServerProcess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">executable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_run</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_save</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_relocate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable_tcp_server</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_server_events</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listener</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listener_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multi_listener</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.11)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notifications</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.11)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">ServerNotification</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shutdown_on_finished</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env_vars</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Mapping" title="(in Python v3.11)"><span class="pre">Mapping</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_process_stdout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_process_stderr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">import_project_properties_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_project_properties_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">import_placeholders_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_placeholders_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dump_project_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opx_project_definition_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><span class="pre">Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additional_args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Iterable" title="(in Python v3.11)"><span class="pre">Iterable</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.optislang.core.osl_process.OslServerProcess" title="Permalink to this definition">#</a></dt>
+<dd><p>Starts and controls local optiSLang server process.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>executable</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>]</span></dt><dd><p>Path to the optiSLang executable file.</p>
+</dd>
+<dt><strong>project_path</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Path to the optiSLang project file.
+- If the project file exists, it is opened.
+- If the project file does not exist, a new project is created on the specified path.
+- If the path is None, a new project is created in the temporary directory.
+Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>batch</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether to start optiSLang server in batch mode. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+<dt><strong>port_range</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tuple</span></code>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Defines the port range for optiSLang server. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>password</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>The server password. Use when communication with the server requires the request
+to contain a password entry. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>no_run</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether not to run the specified project when started in batch mode.
+Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>no_save</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether not to save the specified project after all other actions are completed.
+Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>force</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether to force opening/processing specified project when started in batch mode
+even if issues occur.
+Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>reset</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether to reset specified project after load.
+Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>auto_relocate</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether to automatically relocate missing file paths.
+Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>enable_tcp_server</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether to enable optiSLang TCP server.
+Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+<dt><strong>server_info</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Path to the server information file. If a relative path is provided, it is considered
+to be relative to the project working directory. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, no server information file
+will be written. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>log_commands</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether to display server events in the Message log pane. Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+<dt><strong>listener</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tuple</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Host and port of the remote listener (plain TCP/IP based) to be registered at optiSLang
+server. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>listener_id</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Specific unique ID for the TCP listener. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>multi_listener</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">Tuple</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>]]], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Multiple remote listeners (plain TCP/IP based) to be registered at optiSLang server.
+Each listener is a combination of host, port and (optionally) listener ID.
+Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>notifications</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">ServerNotification</span></code>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Notifications to be sent to the listener. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>shutdown_on_finished: bool, optional</strong></dt><dd><p>Shut down when execution is finished. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>env_vars</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mapping</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Additional environmental variables (key and value) for the optiSLang server process.
+Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>logger</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Any</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Object for logging. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, standard logging object is used. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>log_process_stdout</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether the process STDOUT is supposed to be logged. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+<dt><strong>log_process_stderr</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values" title="(in Python v3.11)"><span class="xref std std-ref">bool</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Determines whether the process STDERR is supposed to be logged. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+<dt><strong>import_project_properties_file</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Optional path to a project properties file to import. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>export_project_properties_file</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Optional path to a project properties file to export. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>import_placeholders_file</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Optional path to a placeholders file to import. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+<dt><strong>export_placeholders_file</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Optional path to a placeholders file to export. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>output_file</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Optional path to an output file for writing project run results to. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>dump_project_state</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Optional path to a project state dump file to export. If a relative path is provided,
+it is considered to be relative to the project working directory. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>opx_project_definition_file</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Optional path to an OPX project definition file. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only supported in batch mode.</p>
+</div>
+</dd>
+<dt><strong>additional_args</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Iterable</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>], <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Additional command line arguments used for execution of the optiSLang server process.
+Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TypeError</span></code></a></dt><dd><p>Raised when the optiSLang executable is None.</p>
+</dd>
+<dt><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#FileNotFoundError" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FileNotFoundError</span></code></a></dt><dd><p>Raised when the optiSLang executable cannot be found.</p>
+</dd>
+<dt><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueError</span></code></a></dt><dd><p>Raised when the path to the optiSLang project file is invalid.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>Start optiSLang server process in batch with specified path to the optiSLang project.
+File paths are defined in Windows operating system.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.optislang.core</span> <span class="kn">import</span> <span class="n">OslServerProcess</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">executable</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\Program Files\ANSYS Inc\v221\optiSLang\optislang.com&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">project_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\osl_project\project.opf&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">osl_process</span> <span class="o">=</span> <span class="n">OslServerProcess</span><span class="p">(</span><span class="n">executable</span><span class="p">,</span> <span class="n">project_path</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">osl_process</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.__init__.html#ansys.optislang.core.osl_process.OslServerProcess.__init__" title="ansys.optislang.core.osl_process.OslServerProcess.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([executable, project_path, batch, ...])</p></td>
+<td><p>Initialize a new instance of the <code class="docutils literal notranslate"><span class="pre">OslServerProcess</span></code> class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.is_running.html#ansys.optislang.core.osl_process.OslServerProcess.is_running" title="ansys.optislang.core.osl_process.OslServerProcess.is_running"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_running</span></code></a>()</p></td>
+<td><p>Determine whether the optiSLang server process is running.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.start.html#ansys.optislang.core.osl_process.OslServerProcess.start" title="ansys.optislang.core.osl_process.OslServerProcess.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code></a>([remove_ini_files])</p></td>
+<td><p>Start new optiSLang server process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.terminate.html#ansys.optislang.core.osl_process.OslServerProcess.terminate" title="ansys.optislang.core.osl_process.OslServerProcess.terminate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">terminate</span></code></a>()</p></td>
+<td><p>Terminate optiSLang server process.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.wait_for_finished.html#ansys.optislang.core.osl_process.OslServerProcess.wait_for_finished" title="ansys.optislang.core.osl_process.OslServerProcess.wait_for_finished"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wait_for_finished</span></code></a>()</p></td>
+<td><p>Wait for the process to finish.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.additional_args.html#ansys.optislang.core.osl_process.OslServerProcess.additional_args" title="ansys.optislang.core.osl_process.OslServerProcess.additional_args"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.additional_args</span></code></a></p></td>
+<td><p>Additional command line arguments used for optiSLang server process execution.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.auto_relocate.html#ansys.optislang.core.osl_process.OslServerProcess.auto_relocate" title="ansys.optislang.core.osl_process.OslServerProcess.auto_relocate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.auto_relocate</span></code></a></p></td>
+<td><p>Get whether to automatically relocate missing file paths.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.batch.html#ansys.optislang.core.osl_process.OslServerProcess.batch" title="ansys.optislang.core.osl_process.OslServerProcess.batch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.batch</span></code></a></p></td>
+<td><p>Get whether the optiSLang server is supposed to be started in batch mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.dump_project_state.html#ansys.optislang.core.osl_process.OslServerProcess.dump_project_state" title="ansys.optislang.core.osl_process.OslServerProcess.dump_project_state"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.dump_project_state</span></code></a></p></td>
+<td><p>Path to a project state dump file to export.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.enable_tcp_server.html#ansys.optislang.core.osl_process.OslServerProcess.enable_tcp_server" title="ansys.optislang.core.osl_process.OslServerProcess.enable_tcp_server"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.enable_tcp_server</span></code></a></p></td>
+<td><p>Get whether to enable optiSLang TCP server.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.env_vars.html#ansys.optislang.core.osl_process.OslServerProcess.env_vars" title="ansys.optislang.core.osl_process.OslServerProcess.env_vars"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.env_vars</span></code></a></p></td>
+<td><p>Additional environmental variables for the optiSLang server process.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.executable.html#ansys.optislang.core.osl_process.OslServerProcess.executable" title="ansys.optislang.core.osl_process.OslServerProcess.executable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.executable</span></code></a></p></td>
+<td><p>Path to the optiSLang executable file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.export_placeholders_file.html#ansys.optislang.core.osl_process.OslServerProcess.export_placeholders_file" title="ansys.optislang.core.osl_process.OslServerProcess.export_placeholders_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.export_placeholders_file</span></code></a></p></td>
+<td><p>Path to the placeholders export file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.export_project_properties_file.html#ansys.optislang.core.osl_process.OslServerProcess.export_project_properties_file" title="ansys.optislang.core.osl_process.OslServerProcess.export_project_properties_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.export_project_properties_file</span></code></a></p></td>
+<td><p>Path to the project properties export file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.import_placeholders_file.html#ansys.optislang.core.osl_process.OslServerProcess.import_placeholders_file" title="ansys.optislang.core.osl_process.OslServerProcess.import_placeholders_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.import_placeholders_file</span></code></a></p></td>
+<td><p>Path to the placeholders import file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.import_project_properties_file.html#ansys.optislang.core.osl_process.OslServerProcess.import_project_properties_file" title="ansys.optislang.core.osl_process.OslServerProcess.import_project_properties_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.import_project_properties_file</span></code></a></p></td>
+<td><p>Path to the project properties import file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.listener.html#ansys.optislang.core.osl_process.OslServerProcess.listener" title="ansys.optislang.core.osl_process.OslServerProcess.listener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.listener</span></code></a></p></td>
+<td><p>Host and port of the remote listener.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.listener_id.html#ansys.optislang.core.osl_process.OslServerProcess.listener_id" title="ansys.optislang.core.osl_process.OslServerProcess.listener_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.listener_id</span></code></a></p></td>
+<td><p>Specific unique ID for the TCP listener.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.log_commands.html#ansys.optislang.core.osl_process.OslServerProcess.log_commands" title="ansys.optislang.core.osl_process.OslServerProcess.log_commands"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.log_commands</span></code></a></p></td>
+<td><p>Get whether to display server events in the Message log pane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.log_process_stderr.html#ansys.optislang.core.osl_process.OslServerProcess.log_process_stderr" title="ansys.optislang.core.osl_process.OslServerProcess.log_process_stderr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.log_process_stderr</span></code></a></p></td>
+<td><p>Get whether the STDERR of the optiSLang server process is to be logged.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.log_process_stdout.html#ansys.optislang.core.osl_process.OslServerProcess.log_process_stdout" title="ansys.optislang.core.osl_process.OslServerProcess.log_process_stdout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.log_process_stdout</span></code></a></p></td>
+<td><p>Get whether the STDOUT of the optiSLang server process is to be logged.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.logger.html#ansys.optislang.core.osl_process.OslServerProcess.logger" title="ansys.optislang.core.osl_process.OslServerProcess.logger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.logger</span></code></a></p></td>
+<td><p>Object used for logging.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.multi_listener.html#ansys.optislang.core.osl_process.OslServerProcess.multi_listener" title="ansys.optislang.core.osl_process.OslServerProcess.multi_listener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.multi_listener</span></code></a></p></td>
+<td><p>Multi remote listener definitions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.no_run.html#ansys.optislang.core.osl_process.OslServerProcess.no_run" title="ansys.optislang.core.osl_process.OslServerProcess.no_run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.no_run</span></code></a></p></td>
+<td><p>Get whether not to run the specified project when started in batch mode .</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.no_save.html#ansys.optislang.core.osl_process.OslServerProcess.no_save" title="ansys.optislang.core.osl_process.OslServerProcess.no_save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.no_save</span></code></a></p></td>
+<td><p>Get whether not to save the specified project after all other actions are completed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.notifications.html#ansys.optislang.core.osl_process.OslServerProcess.notifications" title="ansys.optislang.core.osl_process.OslServerProcess.notifications"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.notifications</span></code></a></p></td>
+<td><p>Notifications which are sent to the listener.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.opx_project_definition_file.html#ansys.optislang.core.osl_process.OslServerProcess.opx_project_definition_file" title="ansys.optislang.core.osl_process.OslServerProcess.opx_project_definition_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.opx_project_definition_file</span></code></a></p></td>
+<td><p>Path to the OPX project definition file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.output_file.html#ansys.optislang.core.osl_process.OslServerProcess.output_file" title="ansys.optislang.core.osl_process.OslServerProcess.output_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.output_file</span></code></a></p></td>
+<td><p>Path to the output file for writing project run results to.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.password.html#ansys.optislang.core.osl_process.OslServerProcess.password" title="ansys.optislang.core.osl_process.OslServerProcess.password"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.password</span></code></a></p></td>
+<td><p>Server password.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.pid.html#ansys.optislang.core.osl_process.OslServerProcess.pid" title="ansys.optislang.core.osl_process.OslServerProcess.pid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.pid</span></code></a></p></td>
+<td><p>Process ID.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.port_range.html#ansys.optislang.core.osl_process.OslServerProcess.port_range" title="ansys.optislang.core.osl_process.OslServerProcess.port_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.port_range</span></code></a></p></td>
+<td><p>Port range for optiSLang server execution.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.project_path.html#ansys.optislang.core.osl_process.OslServerProcess.project_path" title="ansys.optislang.core.osl_process.OslServerProcess.project_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.project_path</span></code></a></p></td>
+<td><p>Path to the optiSLang project file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.reset.html#ansys.optislang.core.osl_process.OslServerProcess.reset" title="ansys.optislang.core.osl_process.OslServerProcess.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.reset</span></code></a></p></td>
+<td><p>Get whether to reset specified project after load.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.server_info.html#ansys.optislang.core.osl_process.OslServerProcess.server_info" title="ansys.optislang.core.osl_process.OslServerProcess.server_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.server_info</span></code></a></p></td>
+<td><p>Path to the server information file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.optislang.core.osl_process.OslServerProcess.shutdown_on_finished.html#ansys.optislang.core.osl_process.OslServerProcess.shutdown_on_finished" title="ansys.optislang.core.osl_process.OslServerProcess.shutdown_on_finished"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OslServerProcess.shutdown_on_finished</span></code></a></p></td>
+<td><p>Whether to shut down when execution is finished.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ansys.optislang.core.osl_process.OslServerProcess"><code class="docutils literal notranslate"><span class="pre">OslServerProcess</span></code></a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/pyansys/pyoptislang/edit/main/doc/source/api/_autosummary/ansys.optislang.core.osl_process.OslServerProcess.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/api/_autosummary/ansys.optislang.core.osl_process.OslServerProcess.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright (c) 2023 ANSYS, Inc. All rights reserved.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+    Built with the <a href="https://sphinxdocs.ansys.com/version/stable/index.html">Ansys Sphinx Theme</a> 0.9.9.
+    <br>Last updated on <span id="date"></span></br>
+</p>
+<script>
+  var options = { day: 'numeric', month: 'long', year: 'numeric' };
+  var lastModifiedDate = new Date(document.lastModified);
+  var date = lastModifiedDate.toLocaleDateString('en-US', options);
+  document.getElementById("date").innerHTML = date;
+</script></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

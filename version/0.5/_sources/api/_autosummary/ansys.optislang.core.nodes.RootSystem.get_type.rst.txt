@@ -1,0 +1,6 @@
+﻿get\_type
+=========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.get_type

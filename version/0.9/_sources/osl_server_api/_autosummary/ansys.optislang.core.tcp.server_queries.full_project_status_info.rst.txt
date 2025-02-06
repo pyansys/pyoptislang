@@ -1,0 +1,6 @@
+﻿full\_project\_status\_info
+===========================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: full_project_status_info

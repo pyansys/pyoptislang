@@ -1,0 +1,6 @@
+run\_python\_file
+=================
+
+.. currentmodule:: ansys.optislang.core.tcp_osl_server
+
+.. automethod:: TcpOslServer.run_python_file

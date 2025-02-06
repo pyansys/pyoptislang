@@ -1,0 +1,6 @@
+get\_registered\_parameters
+===========================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: IntegrationNode.get_registered_parameters

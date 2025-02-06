@@ -1,0 +1,40 @@
+﻿OslServer
+=========
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. autoclass:: OslServer
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      OslServer.dispose
+      
+      
+      OslServer.shutdown
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      OslServer.host
+      OslServer.is_remote
+      OslServer.osl_version
+      OslServer.osl_version_string
+      OslServer.port
+      OslServer.timeout
+   
+   

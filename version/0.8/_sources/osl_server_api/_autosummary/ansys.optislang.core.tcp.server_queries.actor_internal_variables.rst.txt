@@ -1,0 +1,6 @@
+﻿actor\_internal\_variables
+==========================
+
+.. currentmodule:: ansys.optislang.core.tcp.server_queries
+
+.. autofunction:: actor_internal_variables

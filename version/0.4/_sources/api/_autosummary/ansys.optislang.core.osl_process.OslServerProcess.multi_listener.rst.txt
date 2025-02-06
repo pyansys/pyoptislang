@@ -1,0 +1,6 @@
+﻿multi\_listener
+===============
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.multi_listener

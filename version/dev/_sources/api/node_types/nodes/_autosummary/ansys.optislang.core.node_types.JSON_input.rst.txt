@@ -1,0 +1,6 @@
+﻿JSON\_input
+===========
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: JSON_input

@@ -1,0 +1,6 @@
+﻿remove\_criteria
+================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.remove_criteria

@@ -1,0 +1,6 @@
+disconnect\_slot
+================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.disconnect_slot

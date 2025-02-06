@@ -1,0 +1,6 @@
+get\_omdb\_files
+================
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: ParametricSystem.get_omdb_files

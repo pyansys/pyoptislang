@@ -1,0 +1,6 @@
+server\_info
+============
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.server_info

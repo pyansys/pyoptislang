@@ -1,0 +1,40 @@
+﻿DependentParameter
+==================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoclass:: DependentParameter
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      DependentParameter.from_dict
+      
+      
+      DependentParameter.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      DependentParameter.const
+      DependentParameter.id
+      DependentParameter.name
+      DependentParameter.operation
+      DependentParameter.reference_value
+      DependentParameter.type
+   
+   

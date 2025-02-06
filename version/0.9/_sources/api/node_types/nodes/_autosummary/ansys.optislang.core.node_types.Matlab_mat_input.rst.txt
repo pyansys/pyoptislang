@@ -1,0 +1,6 @@
+﻿Matlab\_mat\_input
+==================
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: Matlab_mat_input

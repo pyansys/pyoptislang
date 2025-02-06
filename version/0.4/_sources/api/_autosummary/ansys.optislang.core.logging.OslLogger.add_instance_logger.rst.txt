@@ -1,0 +1,6 @@
+﻿add\_instance\_logger
+=====================
+
+.. currentmodule:: ansys.optislang.core.logging
+
+.. automethod:: OslLogger.add_instance_logger

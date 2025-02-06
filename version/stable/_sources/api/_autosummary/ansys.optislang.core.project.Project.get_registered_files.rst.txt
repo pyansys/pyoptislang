@@ -1,0 +1,6 @@
+get\_registered\_files
+======================
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.get_registered_files

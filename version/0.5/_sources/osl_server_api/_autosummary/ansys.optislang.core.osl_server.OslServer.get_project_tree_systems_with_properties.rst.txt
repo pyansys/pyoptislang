@@ -1,0 +1,6 @@
+﻿get\_project\_tree\_systems\_with\_properties
+=============================================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_project_tree_systems_with_properties

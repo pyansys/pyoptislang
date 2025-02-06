@@ -1,0 +1,6 @@
+﻿get\_location
+=============
+
+.. currentmodule:: ansys.optislang.core.project
+
+.. automethod:: Project.get_location

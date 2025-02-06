@@ -1,0 +1,6 @@
+create\_node
+============
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.create_node

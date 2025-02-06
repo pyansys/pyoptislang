@@ -1,0 +1,6 @@
+get\_responses\_names
+=====================
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. automethod:: ResponseManager.get_responses_names

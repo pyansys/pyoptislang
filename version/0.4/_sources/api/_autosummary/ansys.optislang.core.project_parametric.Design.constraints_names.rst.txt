@@ -1,0 +1,6 @@
+﻿constraints\_names
+==================
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoproperty:: Design.constraints_names

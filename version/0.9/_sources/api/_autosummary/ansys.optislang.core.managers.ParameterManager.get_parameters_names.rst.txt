@@ -1,0 +1,6 @@
+get\_parameters\_names
+======================
+
+.. currentmodule:: ansys.optislang.core.managers
+
+.. automethod:: ParameterManager.get_parameters_names

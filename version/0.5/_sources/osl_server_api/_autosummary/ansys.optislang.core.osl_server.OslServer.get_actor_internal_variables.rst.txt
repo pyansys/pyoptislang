@@ -1,0 +1,6 @@
+﻿get\_actor\_internal\_variables
+===============================
+
+.. currentmodule:: ansys.optislang.core.osl_server
+
+.. automethod:: OslServer.get_actor_internal_variables

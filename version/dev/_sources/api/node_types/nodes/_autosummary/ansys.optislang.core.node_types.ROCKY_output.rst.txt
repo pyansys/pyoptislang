@@ -1,0 +1,6 @@
+﻿ROCKY\_output
+=============
+
+.. currentmodule:: ansys.optislang.core.node_types
+
+.. autodata:: ROCKY_output

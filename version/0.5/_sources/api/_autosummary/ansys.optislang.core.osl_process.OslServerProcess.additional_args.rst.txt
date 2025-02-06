@@ -1,0 +1,6 @@
+﻿additional\_args
+================
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.additional_args

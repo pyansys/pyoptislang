@@ -1,0 +1,6 @@
+has\_active\_project
+====================
+
+.. currentmodule:: ansys.optislang.core.optislang
+
+.. autoproperty:: Optislang.has_active_project

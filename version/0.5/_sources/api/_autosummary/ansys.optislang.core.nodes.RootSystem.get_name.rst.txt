@@ -1,0 +1,6 @@
+﻿get\_name
+=========
+
+.. currentmodule:: ansys.optislang.core.nodes
+
+.. automethod:: RootSystem.get_name

@@ -1,0 +1,6 @@
+get\_project\_location
+======================
+
+.. currentmodule:: ansys.optislang.core.tcp.osl_server
+
+.. automethod:: TcpOslServer.get_project_location

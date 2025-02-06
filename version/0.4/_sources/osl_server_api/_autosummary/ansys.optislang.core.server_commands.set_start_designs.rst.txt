@@ -1,0 +1,6 @@
+﻿set\_start\_designs
+===================
+
+.. currentmodule:: ansys.optislang.core.server_commands
+
+.. autofunction:: set_start_designs

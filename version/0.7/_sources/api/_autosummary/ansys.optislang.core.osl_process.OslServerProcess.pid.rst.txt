@@ -1,0 +1,6 @@
+pid
+===
+
+.. currentmodule:: ansys.optislang.core.osl_process
+
+.. autoproperty:: OslServerProcess.pid

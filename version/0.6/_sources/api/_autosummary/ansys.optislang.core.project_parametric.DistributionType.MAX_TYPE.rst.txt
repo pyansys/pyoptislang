@@ -1,0 +1,6 @@
+MAX\_TYPE
+=========
+
+.. currentmodule:: ansys.optislang.core.project_parametric
+
+.. autoattribute:: DistributionType.MAX_TYPE
